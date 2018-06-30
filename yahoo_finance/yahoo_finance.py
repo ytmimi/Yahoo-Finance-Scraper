@@ -67,10 +67,8 @@ class UTC_Converter():
 		self.time_codes = ['%m/%d/%Y', '%m-%d-%Y','%b %d, %Y',]
 	
 	def __call__(self, fmt_str=None):
-		if type(self.date) == dt.datetime:
-			pass
-		elif type(self.date) == dt.date:
-			pass
+		if type(self.date) == dt.datetime or type(self.date) == dt.date:
+			utc = self.date_to_utc(self.date)
 		elif type(self.date) == str:
 			utc = self.parse_date_string(self.date, fmt_str)
 		return utc
@@ -108,10 +106,11 @@ class UTC_Converter():
 		else:
 			return date
 
-	def parse_datetime(self, time):
-		date = dt.datetime.strptime('06/30/2018', '%m/%d/%Y')
-		stamp = date.timestamp()
-		return stamp
+	def date_to_utc(self, date):
+		date_str = date.strftime('%m/%d/%Y')
+		date_obj = dt.datetime.strptime(date_str, '%m/%d/%Y')
+		return date_obj.timestamp()
+		
 
 
 

@@ -12,8 +12,6 @@ import datetime as dt
 import unittest
 
 
-
-
 class Test_Data_Request(unittest.TestCase):
 	@classmethod
 	def setUpClass(cls):
@@ -87,6 +85,19 @@ class Test_Time_Conversion(unittest.TestCase):
 		with self.assertRaises(ValueError) as ve:
 			utc = UTC_Converter('June 30, 2018').__call__()
 			self.assertEqual(ve.msg, 'Unable to parse string. Please supply the fmt_str kwarg.')
+
+	def test_utc_from_datetime(self):
+		# 1498795200 = 06/30/2017 @ 4:00am (UTC)
+		date = dt.datetime.strptime('06/30/2017','%m/%d/%Y')
+		utc = UTC_Converter(date).__call__()
+		self.assertEqual(utc, 1498795200)
+
+	def test_utc_from_date(self):
+		# 1498795200 = 06/30/2017 @ 4:00am (UTC)
+		date = dt.datetime.strptime('06/30/2017','%m/%d/%Y').date()
+		utc = UTC_Converter(date).__call__()
+		self.assertEqual(utc, 1498795200)
+
 
 
 		
