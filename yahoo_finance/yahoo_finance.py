@@ -46,7 +46,7 @@ class Stock_Data():
 		for tr in self.table_body(self.get_data_table()).find('tr'):
 			for i, td in enumerate(tr.find('td')):
 				if headers[i] == 'Date':
-					value = dt.datetime.strptime(td.text, '%b %d, %Y')
+					value = dt.datetime.strptime(td.text, '%b %d, %Y').date()
 				else:
 					value = float(td.text.replace(',', ''))
 				table[headers[i]].append(value)
@@ -57,6 +57,69 @@ class Stock_Data():
 		table = self.table_to_dict()
 		df = pd.DataFrame(table, index=table['Date'])
 		return df
+
+
+
+class UTC_Converter():
+	def __init__(self, date):
+		self.date = date
+		#look to add more default values
+		self.time_codes = ['%m/%d/%Y', '%m-%d-%Y','%b %d, %Y',]
+	
+	def __call__(self, fmt_str=None):
+		if type(self.date) == dt.datetime:
+			pass
+		elif type(self.date) == dt.date:
+			pass
+		elif type(self.date) == str:
+			utc = self.parse_date_string(self.date, fmt_str)
+		return utc
+
+	def parse_date_string(self, date, fmt_str=None):
+		if fmt_str != None:
+			date = self.custom_str_format(date, fmt_str)
+		else:
+			date = self.default_str_formats(date)
+		stamp = date.timestamp()
+		return stamp
+
+	def custom_str_format(self, date, fmt_str):
+		''' 
+		date: string representing a date	
+		fmt_str: a proper datetime formate used to parse the date
+		'''
+		try:
+			date = dt.datetime.strptime(date, fmt_str)
+		except Exception as e:
+			raise ValueError('The fmt_str did not match the date provided.')		
+
+	def default_str_formats(self, date):
+		found_format = False
+		i = 0
+		#either you find a format or you get to the end of the format list 
+		while ((i < len(self.time_codes)) and not found_format):
+			try:
+				date = dt.datetime.strptime(date, self.time_codes[i])
+				found_format = True
+			except Exception as e:
+				i+=1
+		if not found_format:
+			raise ValueError('Unable to parse string. Please supply the fmt_str kwarg.')
+		else:
+			return date
+
+	def parse_datetime(self, time):
+		date = dt.datetime.strptime('06/30/2018', '%m/%d/%Y')
+		stamp = date.timestamp()
+		return stamp
+
+
+
+
+
+
+
+
 
 
 		
