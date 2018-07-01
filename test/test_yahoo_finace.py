@@ -104,6 +104,29 @@ class Test_Request_Data_Handling(unittest.TestCase):
 		self.assertTrue(df['Date'].iloc[-1] >= dt.date.today() - dt.timedelta(days=365))
 
 
+class Test_Request_Data_Handling_Custom_Inputs(unittest.TestCase):
+	@classmethod
+	def setUpClass(cls):
+		cls.ticker = 'AMD'
+		cls.start = '02/02/2017'
+		cls.end = '02/02/2018'
+		cls.frequency = 'mo'
+		cls.stock_data = Stock_Data(cls.ticker, start=cls.start,
+						end=cls.end, frequency=cls.frequency)
+
+	def test_data_frame_custom_date_range(self):
+		df = self.stock_data.data_frame()
+		self.assertIsInstance(df , pd.DataFrame,)
+		first = dt.datetime.strptime(self.end, '%m/%d/%Y').date()
+		last = dt.datetime.strptime(self.start, '%m/%d/%Y').date()
+		#test that the data in the dataframe corresponds with the custom start and end
+		self.assertTrue(df['Date'].iloc[0].year == first.year )
+		self.assertTrue(df['Date'].iloc[0].month == first.month )
+		self.assertTrue(df['Date'].iloc[-1].year == last.year)
+		self.assertTrue(df['Date'].iloc[-1].month == last.month)
+
+
+
 if __name__ == '__main__':
 	unittest.main()
 
