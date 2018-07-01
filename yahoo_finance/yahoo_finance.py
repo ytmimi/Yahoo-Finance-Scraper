@@ -2,29 +2,55 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 from collections import OrderedDict
+from utc_converter import UTC_Converter
 from requests_html import HTMLSession
 
 
 class Stock_Data():
 	url = 'https://finance.yahoo.com/quote/_/history?p=_'
+	url_append = 'period1=start&period2=end&interval=1rate&filter=history&frequency=1rate'
+	frequency_options = ['d', 'wk', 'mo']
 	session = HTMLSession()
+	utc = UTC_Converter()
 
 	def __init__(self, ticker, start=dt.date.today()+dt.timedelta(days=365), 
-				end=dt.date.today()):
-		self.ticker = ticker
+				end=dt.date.today(), frequency='d', date_fmt_str=None):
+		self.ticker = ticker.upper()
 		self.start = start
 		self.end = end
+		self.frequency = frequency
+		self.date_fmt = date_fmt_str
+		self.response = self.request_data()
 
 
 	def request_data(self):
-		# period1=1498795200&period2=1530331200&interval=1d&filter=history&frequency=1d
-		url = self.url.replace('_', self.ticker)
+		url = self.process_url(self.url)
 		return self.session.get(url)
 
+	def process_url(self, url):
+		url = self.url.replace('_', self.ticker)
+		default_start = dt.date.today()+dt.timedelta(days=365)
+		default_end = dt.date.today()
+		default_freq = 'd'
+		#if any of the default options are changed
+		if (self.start != default_start or self.end != default_end 
+			or self.frequency != default_freq):
+			start = self.utc(self.start, self.date_fmt)
+			end = self.utc(self.end, self.date_fmt)
+			append = self.url_append.replace('start', f'{start}')
+			append = append.replace('end', f'{end}')
+			append = append.replace('rate', self.frequency)
+			url = url.replace(f'p={self.ticker}', append)
+			return url
+
+		else:
+			return url
+
+
+
 	def get_data_table(self):
-		response = self.request_data()
 		# <table class="W(100%) M(0)" data-test="historical-prices">
-		table = response.html.find('table[data-test=historical-prices]', first=True)
+		table = self.response.html.find('table[data-test=historical-prices]', first=True)
 		return table
 
 	def table_head(self, table):
@@ -41,9 +67,12 @@ class Stock_Data():
 		return cols
 
 	def table_to_dict(self):
+		'''Convert html table into dictionary'''
 		headers = self.column_headers()
 		table = OrderedDict((head, []) for head in headers)
+		#searches the table body for tr tags
 		for tr in self.table_body(self.get_data_table()).find('tr'):
+			#searches for all td tags within each tr tag
 			for i, td in enumerate(tr.find('td')):
 				if headers[i] == 'Date':
 					value = dt.datetime.strptime(td.text, '%b %d, %Y').date()
@@ -60,57 +89,6 @@ class Stock_Data():
 
 
 
-class UTC_Converter():
-	def __init__(self, date):
-		self.date = date
-		#look to add more default values
-		self.time_codes = ['%m/%d/%Y', '%m-%d-%Y','%b %d, %Y',]
-	
-	def __call__(self, fmt_str=None):
-		if type(self.date) == dt.datetime or type(self.date) == dt.date:
-			utc = self.date_to_utc(self.date)
-		elif type(self.date) == str:
-			utc = self.parse_date_string(self.date, fmt_str)
-		return utc
-
-	def parse_date_string(self, date, fmt_str=None):
-		if fmt_str != None:
-			date = self.custom_str_format(date, fmt_str)
-		else:
-			date = self.default_str_formats(date)
-		stamp = date.timestamp()
-		return stamp
-
-	def custom_str_format(self, date, fmt_str):
-		''' 
-		date: string representing a date	
-		fmt_str: a proper datetime formate used to parse the date
-		'''
-		try:
-			date = dt.datetime.strptime(date, fmt_str)
-		except Exception as e:
-			raise ValueError('The fmt_str did not match the date provided.')		
-
-	def default_str_formats(self, date):
-		found_format = False
-		i = 0
-		#either you find a format or you get to the end of the format list 
-		while ((i < len(self.time_codes)) and not found_format):
-			try:
-				date = dt.datetime.strptime(date, self.time_codes[i])
-				found_format = True
-			except Exception as e:
-				i+=1
-		if not found_format:
-			raise ValueError('Unable to parse string. Please supply the fmt_str kwarg.')
-		else:
-			return date
-
-	def date_to_utc(self, date):
-		date_str = date.strftime('%m/%d/%Y')
-		date_obj = dt.datetime.strptime(date_str, '%m/%d/%Y')
-		return date_obj.timestamp()
-		
 
 
 
