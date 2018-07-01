@@ -36,7 +36,7 @@ class Stock_Data():
 		if (self.start != default_start or self.end != default_end 
 			or self.frequency != default_freq):
 			start = self.utc(self.start, self.date_fmt)
-			end = self.utc(self.end, self.date_fmt)
+			end = self.utc(self.end, self.date_fmt) 		 
 			append = self.url_append.replace('start', f'{start}')
 			append = append.replace('end', f'{end}')
 			append = append.replace('rate', self.frequency)
@@ -77,9 +77,16 @@ class Stock_Data():
 				if headers[i] == 'Date':
 					value = dt.datetime.strptime(td.text, '%b %d, %Y').date()
 				else:
-					value = float(td.text.replace(',', ''))
+					value = self.process_table_data(td.text)
 				table[headers[i]].append(value)
 		return table
+
+
+	def process_table_data(self, value):
+		if value == '-':
+			return np.nan
+		else:
+			return float(value.replace(',', ''))
 
 
 	def data_frame(self):
