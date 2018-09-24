@@ -217,14 +217,6 @@ class Sustainability_Scraper(Base_Scraper):
 		return super().base_url + self.endpoint
 
 
-
-if __name__ == '__main__':
-	
-	stock = Stock_Scraper('JWN', start_date='10/20/2014', end_date='10/30/2017', frequency='1wk').request_data()
-	options = Options_Scraper('JWN').request_data()
-	print(stock.keys())
-	print('\n')
-	print(options['context']['dispatcher']['stores']['OptionContractsStore'].keys())
 	
 
 
