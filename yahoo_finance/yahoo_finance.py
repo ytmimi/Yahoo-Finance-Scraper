@@ -59,8 +59,18 @@ class Base_Scraper:
 		return json.loads(block[16:-1])
 
 
+class BaseUrlMixin():
+	'''A mixin for each Scraper class that inherits from Base_Scraper
+	overides the base_url property for each class
+	'''
+	@property
+	def base_url(self):
+		'''adds the endpoint to the base url'''
+		return super().base_url + self.endpoint
 
-class Stock_Scraper(Base_Scraper):
+
+
+class Stock_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/history'
 	frequency_options = ['1d', '1wk', '1mo']
 	
@@ -85,11 +95,6 @@ class Stock_Scraper(Base_Scraper):
 			raise ValueError(f'frequency must be either {" or ".join(self.frequency_options)}.')
 		return frequency
 
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
-
 	def _process_url(self):
 		if (self.end_date != date.today() or self.start_date != date.today()-timedelta(days=365)
 			or self.frequency != '1d'):
@@ -106,68 +111,37 @@ class Stock_Scraper(Base_Scraper):
 		}
 		return urlencode(url_params)
 
-class Statistics_Scraper(Base_Scraper):
+class Statistics_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/key-statistics'
 	def __init__(self, ticker):
 		super().__init__(ticker)
 
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
-
-class Profile_Scraper(Base_Scraper):
+class Profile_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/profile'
 	def __init__(self, ticker):
 		super().__init__(ticker)
 
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
-
-
-class Income_Statement_Scraper(Base_Scraper):
+class Income_Statement_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/financials'
 	def __init__(self, ticker):
 		super().__init__(ticker)
 
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
-
-class Balance_Sheet_Scraper(Base_Scraper):
+class Balance_Sheet_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/balance-sheet'
 	def __init__(self, ticker):
 		super().__init__(ticker)
 
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
-
-class Cash_Flow_Scraper(Base_Scraper):
+class Cash_Flow_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/cash-flow'
 	def __init__(self, ticker):
 		super().__init__(ticker)
 
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
-
-class Analysis_Scraper(Base_Scraper):
+class Analysis_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/analysis'
 	def __init__(self, ticker):
 		super().__init__(ticker)
 
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
-
-class Options_Scraper(Base_Scraper):
+class Options_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/options'
 	def __init__(self, ticker, expiration_date=None, date_fmt=None):
 		'''
@@ -177,11 +151,6 @@ class Options_Scraper(Base_Scraper):
 		super().__init__(ticker)
 		self.date = expiration_date
 		self.date_fmt = date_fmt
-
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
 
 	def _process_url(self):
 		if (self.date):
@@ -196,26 +165,15 @@ class Options_Scraper(Base_Scraper):
 		}
 		return urlencode(url_params)
 
-class Holders_Scraper(Base_Scraper):
+class Holders_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/holders'
 	def __init__(self, ticker):
 		super().__init__(ticker)
 
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
-
-class Sustainability_Scraper(Base_Scraper):
+class Sustainability_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/sustainability'
 	def __init__(self, ticker):
 		super().__init__(ticker)
-
-	@property
-	def base_url(self):
-		'''adds the endpoint to the base url'''
-		return super().base_url + self.endpoint
-
 
 	
 
