@@ -2,9 +2,7 @@ import datetime as dt
 
 
 class UTC_Converter():
-	def __init__(self):
-		#look to add more default values
-		self.time_codes = ['%m/%d/%Y', '%m-%d-%Y','%b %d, %Y',]
+	time_codes = ['%m/%d/%Y', '%m-%d-%Y','%b %d, %Y',]
 	
 	def __call__(self, date, offset=dt.timedelta(), fmt_str=None):
 		if type(date) == dt.datetime or type(date) == dt.date:
@@ -25,18 +23,6 @@ class UTC_Converter():
 		stamp = (date + offset).timestamp()
 		return stamp
 
-	def custom_str_format(self, date, fmt_str):
-		''' 
-		date: string representing a date	
-		fmt_str: a proper datetime formate used to parse the date
-		'''
-		try:
-			date = dt.datetime.strptime(date, fmt_str)
-			return date
-		except Exception as e:
-			raise ValueError('The fmt_str did not match the date provided.')
-
-
 	def default_str_formats(self, date):
 		found_format = False
 		i = 0
@@ -51,8 +37,26 @@ class UTC_Converter():
 			raise ValueError('Unable to parse string. Please supply the fmt_str kwarg.')	
 		return date
 
-	def date_to_utc(self, date, offset):
+	@staticmethod
+	def custom_str_format(date, fmt_str):
+		''' 
+		date: string representing a date	
+		fmt_str: a proper datetime formate used to parse the date
+		'''
+		try:
+			date = dt.datetime.strptime(date, fmt_str)
+			return date
+		except Exception as e:
+			raise ValueError('The fmt_str did not match the date provided.')
+
+	@staticmethod
+	def date_to_utc(date, offset):
 		date_str = date.strftime('%m/%d/%Y')
 		date_obj = dt.datetime.strptime(date_str, '%m/%d/%Y')
 		return (date_obj + offset).timestamp()
-		
+
+	@staticmethod
+	def date_str_from_timestamp(timestamp, fmt_str='%m/%d/%Y'):
+		date = dt.datetime.fromtimestamp(timestamp)
+		return date.strftime(fmt_str)
+			
