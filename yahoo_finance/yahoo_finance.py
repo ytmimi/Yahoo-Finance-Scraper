@@ -1,16 +1,11 @@
 import json
-import datetime as dt
 from datetime import date, timedelta
-from collections import OrderedDict
 
 from urllib.parse import urlencode
 from utc_converter import UTC_Converter
-from requests_html import HTMLSession
 import requests
 
-session = HTMLSession()
 utc = UTC_Converter()
-
 
 class Base_Scraper:
 	_base_url = 'https://finance.yahoo.com/quote/_'
@@ -59,15 +54,14 @@ class Base_Scraper:
 		return json.loads(block[16:-1])
 
 
-class BaseUrlMixin():
-	'''A mixin for each Scraper class that inherits from Base_Scraper
-	overides the base_url property for each class
+class BaseUrlMixin:
+	'''A mixin for each Scraper class that inherits from Base_Scraper.
+	Overides the base_url property for each class
 	'''
 	@property
 	def base_url(self):
 		'''adds the endpoint to the base url'''
 		return super().base_url + self.endpoint
-
 
 
 class Stock_Scraper(BaseUrlMixin, Base_Scraper):
@@ -111,6 +105,31 @@ class Stock_Scraper(BaseUrlMixin, Base_Scraper):
 		}
 		return urlencode(url_params)
 
+
+class Options_Scraper(BaseUrlMixin, Base_Scraper):
+	endpoint = '/options'
+	def __init__(self, ticker, expiration_date=None, date_fmt=None):
+		'''
+		expiration_date: a str or datetime object
+		date_fmt: an appropriate date formate string if expiration_date is provided as a string
+		'''
+		super().__init__(ticker)
+		self.date = expiration_date
+		self.date_fmt = date_fmt
+
+	def _process_url(self):
+		if (self.date):
+			return f'{self.base_url}?{self._advanced_query_string()}'
+		return super()._process_url()
+
+	def _advanced_query_string(self):
+		url_params = {
+		'p':self.ticker,
+		#offset by -4 hours to get to midnight
+		'date': utc(self.date, timedelta(hours=-4), self.date_fmt),
+		}
+		return urlencode(url_params)
+
 class Statistics_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/key-statistics'
 	def __init__(self, ticker):
@@ -140,30 +159,6 @@ class Analysis_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/analysis'
 	def __init__(self, ticker):
 		super().__init__(ticker)
-
-class Options_Scraper(BaseUrlMixin, Base_Scraper):
-	endpoint = '/options'
-	def __init__(self, ticker, expiration_date=None, date_fmt=None):
-		'''
-		expiration_date: a str or datetime object
-		date_fmt: an appropriate date formate string if expiration_date is provided as a string
-		'''
-		super().__init__(ticker)
-		self.date = expiration_date
-		self.date_fmt = date_fmt
-
-	def _process_url(self):
-		if (self.date):
-			return f'{self.base_url}?{self._advanced_query_string()}'
-		return super()._process_url()
-
-	def _advanced_query_string(self):
-		url_params = {
-		'p':self.ticker,
-		#offset by -4 hours to get to midnight
-		'date': utc(self.date, dt.timedelta(hours=-4), self.date_fmt),
-		}
-		return urlencode(url_params)
 
 class Holders_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/holders'
