@@ -14,7 +14,6 @@ class Test_Time_Conversion(unittest.TestCase):
 	def setUp(self):
 		self.utc = UTC_Converter()
 
-
 	def test_utc_string_right_fmt(self):
 		# 1530331200 = 06/30/2018 @ 4:00am (UTC)
 		# 1498795200 = 06/30/2017 @ 4:00am (UTC)
@@ -26,8 +25,8 @@ class Test_Time_Conversion(unittest.TestCase):
 			utc = self.utc('06/30/2018', fmt_str='%Y/%m/%d')
 			self.assertEqual(ve.msg, 'The fmt_str did not match the date provided.')
 
-	def test_utc_string_None_fmt(self):
-		utc = self.utc('06/30/2018', fmt_str=None)
+	def test_utc_string_no_fmt(self):
+		utc = self.utc('06/30/2018',)
 		self.assertEqual(utc, 1530331200)
 
 	def test_utc_incorrect_fmt_type(self):
@@ -55,6 +54,20 @@ class Test_Time_Conversion(unittest.TestCase):
 		date = dt.datetime.strptime('06/30/2017','%m/%d/%Y').date()
 		utc = self.utc(date)
 		self.assertEqual(utc, 1498795200)
+
+	def test_utc_str_with_offset(self):
+		# 1498723200 = 06/30/2017 @ 8:00am (UTC)
+		date = dt.datetime.strptime('06/30/2017','%m/%d/%Y').date()
+		offset = dt.timedelta(hours=4)
+		utc = self.utc(date, offset)
+		self.assertEqual(utc, 1498809600)
+
+	def test_utc_date_with_offset(self):
+		# 1498723200 = 06/30/2017 @ 8:00am (UTC)
+		date = '06/30/2017'
+		offset = dt.timedelta(hours=4)
+		utc = self.utc(date, offset)
+		self.assertEqual(utc, 1498809600)
 
 
 if __name__ == '__main__':
