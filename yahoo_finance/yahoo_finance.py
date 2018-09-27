@@ -1,25 +1,34 @@
 import json
-from datetime import date, timedelta
+from datetime import datetime, date, timedelta
 
 from urllib.parse import urlencode
-from utc_converter import UTC_Converter
+from utc_converter import utc
 import requests
 
-utc = UTC_Converter()
 
 class Base_Scraper:
 	_base_url = 'https://finance.yahoo.com/quote/_'
 	def __init__(self, ticker):
 		'''ticker: str, stock ticker'''
-		self.ticker = ticker
+		self.ticker = ticker.upper()
 
 	def request_data(self):
 		'''
-		makes an HTTP GET request and returns json data
+		makes an HTTP GET request and returns json data or raises an error 
+		if the right information is not found
 		'''
-		resp = requests.get(self._process_url())
-		if resp.status_code < 400:
-			return self._process_response(resp)
+		attempts = 0
+		while attempts < 5:
+			try:
+				resp = requests.get(self._process_url())
+				if resp.status_code < 400:
+					#every now and then the response doens't return 
+					#what we need so we try requesting info 5 times
+					return self._process_response(resp)
+			except Exception as e:
+				attempts+=1
+				if attempts == 4:
+					raise e
 		return json.loads(resp.text)
 	
 	@property
@@ -110,7 +119,7 @@ class Options_Scraper(BaseUrlMixin, Base_Scraper):
 	endpoint = '/options'
 	def __init__(self, ticker, expiration_date=None, date_fmt=None):
 		'''
-		expiration_date: a str or datetime object
+		expiration_date: a str a datetime object or int timestamp
 		date_fmt: an appropriate date formate string if expiration_date is provided as a string
 		'''
 		super().__init__(ticker)
@@ -123,11 +132,15 @@ class Options_Scraper(BaseUrlMixin, Base_Scraper):
 		return super()._process_url()
 
 	def _advanced_query_string(self):
-		url_params = {
-		'p':self.ticker,
-		#offset by -4 hours to get to midnight
-		'date': utc(self.date, timedelta(hours=-4), self.date_fmt),
-		}
+		url_params = {'p':self.ticker,}
+		#if the date is already a timestamp
+		if isinstance(self.date, int):
+			url_params['date'] = self.date
+		elif isinstance(self.date, date) or isinstance(self.date, datetime) or isinstance(self.date, str):	
+			#converts to a timestamp
+			url_params['date'] = utc(self.date, self.date_fmt)
+		else:
+			raise ValueError('expiration_date must be a date string, date, datetime, or unix timestamp')
 		return urlencode(url_params)
 
 class Statistics_Scraper(BaseUrlMixin, Base_Scraper):
