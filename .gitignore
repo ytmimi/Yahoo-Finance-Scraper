@@ -1,3 +1,5 @@
 *__pycache__
 *.ipynb*
 moch_data
+server/working_queries.py
+yahoo_finance/example.py
