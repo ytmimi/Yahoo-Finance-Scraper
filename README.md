@@ -23,7 +23,7 @@ $: pip install pipenv
 Feel free to use any virtual environment you'd like. However,  since I've used pipenv it'll
 save you the trouble of manually installing all the required packages.
 
-If you've chosen to use pipenv, move into the directory where you cloned this repository and create a new virtual enviornemt by running:
+If you've chosen to use pipenv, move into the root directory where you cloned this repository and create a new virtual enviornemt by running:
  ```
  $: pipenv install
  ```
