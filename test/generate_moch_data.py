@@ -56,7 +56,7 @@ def run_function(base_scraper, data_generator, function, *func_args, **func_kwar
 
 
 if __name__ == '__main__':
-	data_directory = make_directory('moch_data')
+	data_directory = make_directory('mock_data')
 	ticker = 'JWN'
 	frequencies = ['1d', '1wk', '1mo']
 	for frequency in frequencies:
