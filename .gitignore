@@ -1,5 +1,5 @@
 *__pycache__
 *.ipynb*
-moch_data
+mock_data
 server/working_queries.py
 yahoo_finance/example.py
