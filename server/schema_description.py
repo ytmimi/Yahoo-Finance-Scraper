@@ -109,7 +109,7 @@ class Query_Description(Description):
 		)
 	class Meta:
 		ticker = TICKER
-		tickers = 'A list of valid stock ticker.'
+		tickers = 'A list of valid stock tickers.'
 		startDate = 'A date in the form mm/dd/yyyy. Defaults to 365 days prior to the current date.'
 		endDate = 'A date in the form mm/dd/yyyy. Defaults to the current date.'
 		frequency = 'A given frequency for stock data. Values must be one of the following: 1d,  1wk, or, 1mo.'
