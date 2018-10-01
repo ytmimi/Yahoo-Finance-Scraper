@@ -57,7 +57,7 @@ Assuming that you're already inside the virtual environment and have all the req
 $: python server/server.py
 ```
 This will start a simple Flask app, and you should see an output that looks similar to the following:
-```
+```shell
 * Serving Flask app "server" (lazy loading)
 * Environment: production
   WARNING: Do not use the development server in a production environment.
