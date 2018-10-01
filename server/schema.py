@@ -4,12 +4,13 @@ import sys
 from datetime import date, timedelta
 from functools import wraps
 
-BASE_PATH = os.path.abspath('.')
-#appends the yahoo_finance package to the path
-sys.path.append(os.path.join(BASE_PATH, 'yahoo_finance'))
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_PATH)
 
-from yahoo_data import Stock_Data, Option_Data
-from utc_converter import date_str_from_timestamp as strftimestamp
+import yahoo_finance.yahoo_data as yd
+from utc_converter import (date_str_from_timestamp as strftimestamp,
+	_date_string_to_utc as string_to_utc
+)
 from schema_description import (
 	Stock_Price_Description as sp_desc,
 	Option_Description as op_desc,
@@ -20,8 +21,8 @@ from schema_description import (
 
 import graphene
 
-stock = Stock_Data()
-option = Option_Data()
+stock = yd.Stock_Data()
+option = yd.Option_Data()
 
 def convert_timstamp(f):
 	'''Decorator that converst timstamps to strings'''
@@ -256,7 +257,6 @@ class Ticker(graphene.ObjectType):
 		return map_stockPrice(stock_data)
 
 	def resolve_calls(self, info):
-		import pdb; pdb.set_trace()
 		call_data = option.calls(self.ticker)
 		return map_options(call_data)
 
@@ -277,9 +277,23 @@ def map_Tickers(ticker_list, **optional_args):
 	'''maps a list of stock tickers to Ticker objects'''
 	return list(map(lambda ticker: Ticker(ticker=ticker, **optional_args), ticker_list))
 
-
 def underlying_expiration(**kwargs):
 	return (kwargs.get('underlying'), kwargs.get('expiration'))
+
+def closest_expiration(ticker, exp_date):
+	'''returns the closest expiration following or equal to the date provided
+		if no date, returns none'''
+	if exp_date:
+		#maps exp_date to a unix utc timestamp
+		exp_utc = string_to_utc(exp_date)
+		exp_list = option.expirations(ticker)
+		filtered_list = [timestamp for timestamp in exp_list if timestamp >= exp_utc]
+		#if their are actually options expiring after the date we selected
+		if len(filtered_list) > 0:
+			return filtered_list[0]
+		#otherwise return the timestamp for the current expiration month
+		return exp_list[0]
+	return exp_date
 
 #self does not work in the base Query object. Not 100% sure why
 class Query(graphene.ObjectType):
@@ -327,30 +341,37 @@ class Query(graphene.ObjectType):
 
 
 	def resolve_ticker(self, info, **kwargs):
-		'''kwargs: ticker, startDate, endDate, frequency'''
+		'''kwargs: see query arguments'''
 		return Ticker(**kwargs)
 
 	def resolve_tickers(self, info, **kwargs):
-		'''kwargs: ticker, startDate, endDate, frequency'''
+		'''kwargs: see query arguments'''
 		all_args = kwargs
 		tickers = all_args.pop('tickers')
 		return map_Tickers(tickers, **all_args)
 
 	def resolve_calls(self, info, **kwargs):
-		ticker,  _ = underlying_expiration(**kwargs)
-		call_data = option.calls(ticker)
+		'''kwargs: see query arguments'''
+		ticker,  exp = underlying_expiration(**kwargs)
+		exp = closest_expiration(ticker, exp)
+		call_data = option.calls(ticker, exp)
 		return map_options(call_data)
 
 	def resolve_puts(self, info, **kwargs):
-		ticker, _ = underlying_expiration(**kwargs)
-		put_data = option.puts(ticker)
+		'''kwargs: see query arguments'''
+		ticker, exp = underlying_expiration(**kwargs)
+		exp = closest_expiration(ticker, exp)
+		put_data = option.puts(ticker, exp)
 		return map_options(put_data)
 
 	def resolve_optionStrikes(self, info, **kwargs):
-		ticker, _ = underlying_expiration(**kwargs)
-		return option.strike_prices(ticker)
+		'''kwargs: see query arguments'''
+		ticker, exp = underlying_expiration(**kwargs)
+		exp = closest_expiration(ticker, exp)
+		return option.strike_prices(ticker, exp)
 
 	def resolve_optionExpirationDates(self, info, **kwargs):
+		'''kwargs: see query arguments'''
 		ticker, _ = underlying_expiration(**kwargs)
 		expirations = option.expirations(ticker)
 		return list(map(lambda data: strftimestamp(data), expirations))
