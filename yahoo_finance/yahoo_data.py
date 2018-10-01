@@ -41,30 +41,57 @@ class CacheData:
 class Stock_Data(CacheData):
 	scraper = yf.Stock_Scraper
 	
+	@staticmethod
+	def _get_ticker(*args, **kwargs):
+		if args:
+			return args[0]
+		if kwargs: 
+			return kwargs['ticker']
+	
 	def stock_data(self, *args, **kwargs):
 		scraper = self.scraper(*args, **kwargs)
 		data = self._request_data(scraper)['HistoricalPriceStore']['prices']
 		#filters the data we get back from dividends and blank values
 		return [item for item in data if not item.get('type') and item.get('open') != None]
 
-	def relate_stocks(self, *args, **kwargs):
-		check_out = 'RecommendationStore'
-		pass
-
-	#think about useing another streaming serveis like IEX
-	def current_price(self, *args, **kwargs):
+	@staticmethod
+	def _filter_ticker_data(data_dict):
+		'''data_dict: a dict that contains info on the stock like:
+		symbol, regularMarketOpen, 'regularMarketHigh', or 'fiftyTwoWeekRange'
+		'''
+		return {
+				'symbol':data_dict['symbol'],
+				'openToday':data_dict['regularMarketOpen'],
+				'highToday':data_dict['regularMarketDayHigh'],
+				'lowToday':data_dict['regularMarketDayLow'],
+				'closePrevious':data_dict['regularMarketPreviousClose'],
+				'recentPrice':data_dict['regularMarketPrice'],
+				'volumeToday':data_dict['regularMarketVolume'],
+				'sharesOtstanding':data_dict['sharesOutstanding'],
+				'marketCap':data_dict['marketCap'],
+				'fiftyTwoWeekHigh':data_dict['fiftyTwoWeekHigh'],
+				'fiftyTwoWeekLow':data_dict['fiftyTwoWeekLow'],
+				'fiftyTwoWeekRange':data_dict['fiftyTwoWeekRange'],
+				} 
+			
+	def relate_tickers(self, *args, **kwargs):
+		ticker = self._get_ticker(*args, **kwargs)
 		scraper = self.scraper(*args, **kwargs)
-		check_out=['StreamDataStore', 'quoteData', 'TICKER','regularMarketPrice']
-		pass
-		
-	#think about useing another streaming serveis like IEX
-	def new_current_price(self, *args, **kwargs):
-		''' '''
-		pass
+		data = self._request_data(scraper)['RecommendationStore']['recommendedSymbols'][ticker]
+		return [self._filter_ticker_data(item) for item in data]
 
 	def overview(self, *args, **kwargs):
 		'''return info on 52 week high, close, open previous close...'''
-		pass
+		ticker = self._get_ticker(*args, **kwargs)
+		related_ticker = kwargs.pop('related_tickers', None)
+		scraper = self.scraper(ticker)
+		if related_ticker:
+			data = self._request_data(scraper)['StreamDataStore']['quoteData']
+			return [self._filter_ticker_data(data[symbol] for symbol in data)]
+		else:
+			data = self._request_data(scraper)['StreamDataStore']['quoteData'][ticker]
+			#although it only returns one, its a list to be consistent
+			return [self._filter_ticker_data(data)]
 
 
 class Option_Data(CacheData):
