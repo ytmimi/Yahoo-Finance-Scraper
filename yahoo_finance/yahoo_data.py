@@ -1,5 +1,10 @@
+import os, sys
 from base64 import b64encode
-from yahoo_finance import Stock_Scraper, Options_Scraper
+
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.join(BASE_PATH, 'yahoo_finance'))
+
+import yahoo_finance.yahoo_finance as yf 
 
 
 class CacheData:
@@ -34,7 +39,7 @@ class CacheData:
 
 
 class Stock_Data(CacheData):
-	scraper = Stock_Scraper
+	scraper = yf.Stock_Scraper
 	
 	def stock_data(self, *args, **kwargs):
 		scraper = self.scraper(*args, **kwargs)
@@ -51,7 +56,7 @@ class Stock_Data(CacheData):
 		scraper = self.scraper(*args, **kwargs)
 		check_out=['StreamDataStore', 'quoteData', 'TICKER','regularMarketPrice']
 		pass
-
+		
 	#think about useing another streaming serveis like IEX
 	def new_current_price(self, *args, **kwargs):
 		''' '''
@@ -63,7 +68,7 @@ class Stock_Data(CacheData):
 
 
 class Option_Data(CacheData):
-	scraper = Options_Scraper
+	scraper = yf.Options_Scraper
 	
 	def strike_prices(self, *args, **kwargs):
 		scraper = self.scraper(*args, **kwargs)
