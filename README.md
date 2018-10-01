@@ -36,12 +36,13 @@ $: pipenv shell
 ## Testing
 This project uses pytest for unit testing. Because This project is built around a web-scraper, it is almost guaranteed to break at some point. To ensure that the project is working correctly, you should run the test suite before you try to use it. This should include running tests that mock data, as well as, live tests.
 
-Before running the tests you'll have to gather the mock data files. To do so run:
+By default live tests will not be run. To enable live test set the LIVE_TEST variable in `test/settings.py` to True.
 
+```python
+#VARIABLE USED TO TOGGLE LIVE TESTS
+LIVE_TEST = True
 ```
-$: python test/generate_moch_data.py
-```
-This file will attempt to gather data from yahoo finance, and save them to json files in a newly created /mock_data directory. If the above script runs without any issues thats a good sign that everything should be working. To be 100% certain about the functionality of the program the full test suite should be run with pytest:
+Then go ahead and run the test suite with:
 ```
 $: pytest
 ```
