@@ -2,15 +2,16 @@ import os
 import sys
 import datetime as dt
 
-BASE_PATH = os.path.abspath('.')
-#appends the yahoo_finance package to the path
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(os.path.join(BASE_PATH, 'yahoo_finance'))
+sys.path.append(os.path.join(BASE_PATH, 'test'))
 
 import yahoo_finance.yahoo_finance as yf
+import settings
+
 from unittest.mock import patch
 import pytest
 
-LIVE_TEST = False
 
 
 class Test_Base_Scraper:
@@ -162,7 +163,8 @@ class Test_Sustainability_Scraper:
 
 
 
-@pytest.mark.skipif(not LIVE_TEST, reason='These tests each make seperate request to yahoo finance')
+@pytest.mark.skipif(not settings.LIVE_TEST, 
+	reason='These tests each make seperate request to yahoo finance')
 class Test_Requests:
 	def test_base(self):
 		resp = yf.Base_Scraper('JWN').request_data()
