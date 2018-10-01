@@ -1,0 +1,1496 @@
+{
+    "StreamDataStore": {
+        "quoteData": {
+            "JWN": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 60.03,
+                    "fmt": "60.03"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424081,
+                    "fmt": "4:01PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "37.79 - 66.33",
+                    "fmt": "37.79 - 66.33"
+                },
+                "sharesOutstanding": {
+                    "raw": 168564992,
+                    "fmt": "168.565M",
+                    "longFmt": "168,564,992"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 61.12,
+                    "fmt": "61.12"
+                },
+                "shortName": "Nordstrom, Inc.",
+                "longName": "Nordstrom, Inc.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": 0.8199997,
+                    "fmt": "0.82"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 59.81,
+                    "fmt": "59.81"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -5.700001,
+                    "fmt": "-5.70"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 22.84,
+                    "fmt": "22.84"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 59.81,
+                    "fmt": "59.81"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 60.63,
+                    "fmt": "60.63"
+                },
+                "regularMarketVolume": {
+                    "raw": 2078568,
+                    "fmt": "2.079M",
+                    "longFmt": "2,078,568"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 10220095488,
+                    "fmt": "10.22B",
+                    "longFmt": "10,220,095,488"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "JWN",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.6043927,
+                    "fmt": "60.44%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "59.81 - 61.12",
+                    "fmt": "59.81 - 61.12"
+                },
+                "messageBoardId": "finmb_32215",
+                "fiftyTwoWeekHigh": {
+                    "raw": 66.33,
+                    "fmt": "66.33"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.085933976,
+                    "fmt": "-8.59%"
+                },
+                "uuid": "e047eab7-a971-3544-bbdb-fb89756f34f3",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 37.79,
+                    "fmt": "37.79"
+                },
+                "regularMarketChangePercent": {
+                    "raw": 1.3710077,
+                    "fmt": "1.37%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "M": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 34.56,
+                    "fmt": "34.56"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424088,
+                    "fmt": "4:01PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "17.41 - 41.99",
+                    "fmt": "17.41 - 41.99"
+                },
+                "sharesOutstanding": {
+                    "raw": 306972992,
+                    "fmt": "306.973M",
+                    "longFmt": "306,972,992"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 34.98,
+                    "fmt": "34.98"
+                },
+                "shortName": "Macy's Inc",
+                "longName": "Macy's, Inc.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": -0.020000458,
+                    "fmt": "-0.02"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 34.73,
+                    "fmt": "34.73"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -7.2800026,
+                    "fmt": "-7.28"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 17.3,
+                    "fmt": "17.30"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 34.4,
+                    "fmt": "34.40"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 34.71,
+                    "fmt": "34.71"
+                },
+                "regularMarketVolume": {
+                    "raw": 4162542,
+                    "fmt": "4.163M",
+                    "longFmt": "4,162,542"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 10655032320,
+                    "fmt": "10.655B",
+                    "longFmt": "10,655,032,320"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "M",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.9936817,
+                    "fmt": "99.37%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "34.4 - 34.98",
+                    "fmt": "34.40 - 34.98"
+                },
+                "messageBoardId": "finmb_318091",
+                "fiftyTwoWeekHigh": {
+                    "raw": 41.99,
+                    "fmt": "41.99"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.17337467,
+                    "fmt": "-17.34%"
+                },
+                "uuid": "69691c7b-dcc3-3e6d-9d8a-1361f22d04ac",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 17.41,
+                    "fmt": "17.41"
+                },
+                "regularMarketChangePercent": {
+                    "raw": -0.057588417,
+                    "fmt": "-0.06%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "KSS": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 74.7,
+                    "fmt": "74.70"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424108,
+                    "fmt": "4:01PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "37.97 - 82.42",
+                    "fmt": "37.97 - 82.42"
+                },
+                "sharesOutstanding": {
+                    "raw": 166712992,
+                    "fmt": "166.713M",
+                    "longFmt": "166,712,992"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 76.51,
+                    "fmt": "76.51"
+                },
+                "shortName": "Kohl's Corporation",
+                "longName": "Kohl's Corporation",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": 1.5,
+                    "fmt": "1.50"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 74.55,
+                    "fmt": "74.55"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -6.369995,
+                    "fmt": "-6.37"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 38.08,
+                    "fmt": "38.08"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 74.34,
+                    "fmt": "74.34"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 76.05,
+                    "fmt": "76.05"
+                },
+                "regularMarketVolume": {
+                    "raw": 2826362,
+                    "fmt": "2.826M",
+                    "longFmt": "2,826,362"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 12678523904,
+                    "fmt": "12.679B",
+                    "longFmt": "12,678,523,904"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "KSS",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 1.002897,
+                    "fmt": "100.29%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "74.34 - 76.51",
+                    "fmt": "74.34 - 76.51"
+                },
+                "messageBoardId": "finmb_61243",
+                "fiftyTwoWeekHigh": {
+                    "raw": 82.42,
+                    "fmt": "82.42"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.07728701,
+                    "fmt": "-7.73%"
+                },
+                "uuid": "e2f43810-0384-3696-9e73-3c01eadedcc6",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 37.97,
+                    "fmt": "37.97"
+                },
+                "regularMarketChangePercent": {
+                    "raw": 2.0120723,
+                    "fmt": "2.01%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "GPS": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 29.05,
+                    "fmt": "29.05"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424137,
+                    "fmt": "4:02PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "25.36 - 35.68",
+                    "fmt": "25.36 - 35.68"
+                },
+                "sharesOutstanding": {
+                    "raw": 384708000,
+                    "fmt": "384.708M",
+                    "longFmt": "384,708,000"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 29.05,
+                    "fmt": "29.05"
+                },
+                "shortName": "Gap, Inc. (The)",
+                "longName": "The Gap, Inc.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": -0.13000107,
+                    "fmt": "-0.13"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 28.85,
+                    "fmt": "28.85"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -6.960001,
+                    "fmt": "-6.96"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 3.3599987,
+                    "fmt": "3.36"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 28.39,
+                    "fmt": "28.39"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 28.72,
+                    "fmt": "28.72"
+                },
+                "regularMarketVolume": {
+                    "raw": 4499660,
+                    "fmt": "4.5M",
+                    "longFmt": "4,499,660"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 11048813568,
+                    "fmt": "11.049B",
+                    "longFmt": "11,048,813,568"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "GPS",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.13249207,
+                    "fmt": "13.25%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "28.39 - 29.05",
+                    "fmt": "28.39 - 29.05"
+                },
+                "messageBoardId": "finmb_274265",
+                "fiftyTwoWeekHigh": {
+                    "raw": 35.68,
+                    "fmt": "35.68"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.19506729,
+                    "fmt": "-19.51%"
+                },
+                "uuid": "8c578de3-7278-3da4-88d7-63ea86c5cf20",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 25.36,
+                    "fmt": "25.36"
+                },
+                "regularMarketChangePercent": {
+                    "raw": -0.45061028,
+                    "fmt": "-0.45%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "TIF": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 129.24,
+                    "fmt": "129.24"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424108,
+                    "fmt": "4:01PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "90.46 - 141.64",
+                    "fmt": "90.46 - 141.64"
+                },
+                "sharesOutstanding": {
+                    "raw": 122411000,
+                    "fmt": "122.411M",
+                    "longFmt": "122,411,000"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 129.81,
+                    "fmt": "129.81"
+                },
+                "shortName": "Tiffany & Co.",
+                "longName": "Tiffany &amp; Co.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": -0.6199951,
+                    "fmt": "-0.62"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 128.97,
+                    "fmt": "128.97"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -13.289993,
+                    "fmt": "-13.29"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 37.890007,
+                    "fmt": "37.89"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 127.17,
+                    "fmt": "127.17"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 128.35,
+                    "fmt": "128.35"
+                },
+                "regularMarketVolume": {
+                    "raw": 1534846,
+                    "fmt": "1.535M",
+                    "longFmt": "1,534,846"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 15711452160,
+                    "fmt": "15.711B",
+                    "longFmt": "15,711,452,160"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "TIF",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.41885924,
+                    "fmt": "41.89%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "127.17 - 129.81",
+                    "fmt": "127.17 - 129.81"
+                },
+                "messageBoardId": "finmb_35576",
+                "fiftyTwoWeekHigh": {
+                    "raw": 141.64,
+                    "fmt": "141.64"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.09382938,
+                    "fmt": "-9.38%"
+                },
+                "uuid": "94428806-80eb-3d7f-b60d-15f422004547",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 90.46,
+                    "fmt": "90.46"
+                },
+                "regularMarketChangePercent": {
+                    "raw": -0.48072818,
+                    "fmt": "-0.48%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "JCP": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 1.67,
+                    "fmt": "1.67"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424252,
+                    "fmt": "4:04PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "1.55 - 4.75",
+                    "fmt": "1.55 - 4.75"
+                },
+                "sharesOutstanding": {
+                    "raw": 314800000,
+                    "fmt": "314.8M",
+                    "longFmt": "314,800,000"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 1.71,
+                    "fmt": "1.71"
+                },
+                "shortName": "J.C. Penney Company, Inc. Holdi",
+                "longName": "J. C. Penney Company, Inc.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": 0.04000008,
+                    "fmt": "0.04"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 1.66,
+                    "fmt": "1.66"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -3.05,
+                    "fmt": "-3.05"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 0.1500001,
+                    "fmt": "0.15"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 1.67,
+                    "fmt": "1.67"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 1.7,
+                    "fmt": "1.70"
+                },
+                "regularMarketVolume": {
+                    "raw": 6747829,
+                    "fmt": "6.748M",
+                    "longFmt": "6,747,829"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 535160000,
+                    "fmt": "535.16M",
+                    "longFmt": "535,160,000"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "JCP",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.09677426,
+                    "fmt": "9.68%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "1.67 - 1.71",
+                    "fmt": "1.67 - 1.71"
+                },
+                "messageBoardId": "finmb_295624",
+                "fiftyTwoWeekHigh": {
+                    "raw": 4.75,
+                    "fmt": "4.75"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.6421053,
+                    "fmt": "-64.21%"
+                },
+                "uuid": "0440a8c5-fef1-3bb1-a12a-537612cef9e8",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 1.55,
+                    "fmt": "1.55"
+                },
+                "regularMarketChangePercent": {
+                    "raw": 2.4096434,
+                    "fmt": "2.41%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            }
+        },
+        "mktmData": {}
+    },
+    "OptionContractsStore": {
+        "isPending": false,
+        "meta": {
+            "expirationDates": [
+                1539907200,
+                1542326400,
+                1547769600,
+                1555545600,
+                1579219200,
+                1610668800
+            ],
+            "hasMiniOptions": false,
+            "quote": {
+                "sourceInterval": 15,
+                "esgPopulated": false,
+                "quoteSourceName": "Delayed Quote",
+                "regularMarketOpen": 60.03,
+                "averageDailyVolume3Month": 2804844,
+                "exchange": "NYQ",
+                "twoHundredDayAverage": 52.966885,
+                "trailingAnnualDividendYield": 0.024745025,
+                "regularMarketTime": 1538424081,
+                "fiftyTwoWeekRange": "37.79 - 66.33",
+                "sharesOutstanding": 168564992,
+                "regularMarketDayHigh": 61.12,
+                "shortName": "Nordstrom, Inc.",
+                "averageDailyVolume10Day": 2115483,
+                "longName": "Nordstrom, Inc.",
+                "exchangeTimezoneName": "America/New_York",
+                "bookValue": 6.806,
+                "regularMarketChange": 0.8199997,
+                "regularMarketPreviousClose": 59.81,
+                "postMarketTime": 1538425624,
+                "fiftyDayAverage": 61.470882,
+                "trailingAnnualDividendRate": 1.48,
+                "fiftyTwoWeekHighChange": -5.700001,
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": 22.84,
+                "fiftyDayAverageChangePercent": -0.013679344,
+                "exchangeDataDelayedBy": 0,
+                "postMarketChange": -0.0041007996,
+                "postMarketPrice": 60.6259,
+                "earningsTimestamp": 1542315600,
+                "priceToBook": 8.908316,
+                "earningsTimestampEnd": 1526328000,
+                "epsTrailingTwelveMonths": 3.029,
+                "regularMarketDayLow": 59.81,
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": 60.63,
+                "trailingPE": 20.016508,
+                "regularMarketVolume": 2078568,
+                "twoHundredDayAverageChangePercent": 0.1446775,
+                "twoHundredDayAverageChange": 7.6631165,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "earningsTimestampStart": 1525896000,
+                "marketCap": 10220095488,
+                "quoteType": "EQUITY",
+                "symbol": "JWN",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": 0.6043927,
+                "regularMarketDayRange": "59.81 - 61.12",
+                "ask": 62.2,
+                "postMarketChangePercent": -0.0067636473,
+                "fiftyDayAverageChange": -0.84088135,
+                "messageBoardId": "finmb_32215",
+                "askSize": 22,
+                "fiftyTwoWeekHigh": 66.33,
+                "forwardPE": 15.997362,
+                "financialCurrency": "USD",
+                "fiftyTwoWeekHighChangePercent": -0.085933976,
+                "market": "us_market",
+                "fiftyTwoWeekLow": 37.79,
+                "dividendDate": 1537315200,
+                "epsForward": 3.79,
+                "bid": 59.3,
+                "regularMarketChangePercent": 1.3710077,
+                "fullExchangeName": "NYSE",
+                "tradeable": true,
+                "bidSize": 10
+            },
+            "strikes": [
+                35,
+                40,
+                50,
+                65,
+                72.5,
+                90
+            ],
+            "underlyingSymbol": "JWN"
+        },
+        "contracts": {
+            "calls": [
+                {
+                    "contractSymbol": "JWN210115C00035000",
+                    "impliedVolatility": {
+                        "raw": 0.44751529052734373,
+                        "fmt": "44.75%"
+                    },
+                    "expiration": {
+                        "raw": 1610668800,
+                        "fmt": "2021-01-15",
+                        "longFmt": "2021-01-15T00:00"
+                    },
+                    "change": {
+                        "raw": 0,
+                        "fmt": "0.00"
+                    },
+                    "currency": "USD",
+                    "strike": {
+                        "raw": 35,
+                        "fmt": "35.00"
+                    },
+                    "contractSize": "REGULAR",
+                    "lastPrice": {
+                        "raw": 26.52,
+                        "fmt": "26.52"
+                    },
+                    "inTheMoney": true,
+                    "openInterest": {
+                        "raw": 7,
+                        "fmt": "7",
+                        "longFmt": "7"
+                    },
+                    "percentChange": {
+                        "raw": 0,
+                        "fmt": "0.00%"
+                    },
+                    "ask": {
+                        "raw": 29.2,
+                        "fmt": "29.20"
+                    },
+                    "volume": {
+                        "raw": 6,
+                        "fmt": "6",
+                        "longFmt": "6"
+                    },
+                    "lastTradeDate": {
+                        "raw": 1537889376,
+                        "fmt": "2018-09-25",
+                        "longFmt": "2018-09-25T15:29"
+                    },
+                    "bid": {
+                        "raw": 24.75,
+                        "fmt": "24.75"
+                    }
+                },
+                {
+                    "contractSymbol": "JWN210115C00065000",
+                    "impliedVolatility": {
+                        "raw": 0.36749900085449216,
+                        "fmt": "36.75%"
+                    },
+                    "expiration": {
+                        "raw": 1610668800,
+                        "fmt": "2021-01-15",
+                        "longFmt": "2021-01-15T00:00"
+                    },
+                    "change": {
+                        "raw": 0,
+                        "fmt": "0.00"
+                    },
+                    "currency": "USD",
+                    "strike": {
+                        "raw": 65,
+                        "fmt": "65.00"
+                    },
+                    "contractSize": "REGULAR",
+                    "lastPrice": {
+                        "raw": 8.7,
+                        "fmt": "8.70"
+                    },
+                    "inTheMoney": false,
+                    "openInterest": {
+                        "raw": 27,
+                        "fmt": "27",
+                        "longFmt": "27"
+                    },
+                    "percentChange": {
+                        "raw": 0,
+                        "fmt": "0.00%"
+                    },
+                    "ask": {
+                        "raw": 11.7,
+                        "fmt": "11.70"
+                    },
+                    "volume": {
+                        "raw": 3,
+                        "fmt": "3",
+                        "longFmt": "3"
+                    },
+                    "lastTradeDate": {
+                        "raw": 1537894814,
+                        "fmt": "2018-09-25",
+                        "longFmt": "2018-09-25T17:00"
+                    },
+                    "bid": {
+                        "raw": 8,
+                        "fmt": "8.00"
+                    }
+                },
+                {
+                    "contractSymbol": "JWN210115C00072500",
+                    "impliedVolatility": {
+                        "raw": 0.3690858990478516,
+                        "fmt": "36.91%"
+                    },
+                    "expiration": {
+                        "raw": 1610668800,
+                        "fmt": "2021-01-15",
+                        "longFmt": "2021-01-15T00:00"
+                    },
+                    "change": {
+                        "raw": 0,
+                        "fmt": "0.00"
+                    },
+                    "currency": "USD",
+                    "strike": {
+                        "raw": 72.5,
+                        "fmt": "72.50"
+                    },
+                    "contractSize": "REGULAR",
+                    "lastPrice": {
+                        "raw": 8.04,
+                        "fmt": "8.04"
+                    },
+                    "inTheMoney": false,
+                    "openInterest": {
+                        "raw": 0,
+                        "fmt": "0",
+                        "longFmt": "0"
+                    },
+                    "percentChange": {
+                        "raw": 0,
+                        "fmt": "0.00%"
+                    },
+                    "ask": {
+                        "raw": 9.45,
+                        "fmt": "9.45"
+                    },
+                    "volume": {
+                        "raw": 15,
+                        "fmt": "15",
+                        "longFmt": "15"
+                    },
+                    "lastTradeDate": {
+                        "raw": 1537588456,
+                        "fmt": "2018-09-22",
+                        "longFmt": "2018-09-22T03:54"
+                    },
+                    "bid": {
+                        "raw": 5.8,
+                        "fmt": "5.80"
+                    }
+                },
+                {
+                    "contractSymbol": "JWN210115C00090000",
+                    "impliedVolatility": {
+                        "raw": 0.3303289624023437,
+                        "fmt": "33.03%"
+                    },
+                    "expiration": {
+                        "raw": 1610668800,
+                        "fmt": "2021-01-15",
+                        "longFmt": "2021-01-15T00:00"
+                    },
+                    "change": {
+                        "raw": 0,
+                        "fmt": "0.00"
+                    },
+                    "currency": "USD",
+                    "strike": {
+                        "raw": 90,
+                        "fmt": "90.00"
+                    },
+                    "contractSize": "REGULAR",
+                    "lastPrice": {
+                        "raw": 3.5,
+                        "fmt": "3.50"
+                    },
+                    "inTheMoney": false,
+                    "openInterest": {
+                        "raw": 2,
+                        "fmt": "2",
+                        "longFmt": "2"
+                    },
+                    "percentChange": {
+                        "raw": 0,
+                        "fmt": "0.00%"
+                    },
+                    "ask": {
+                        "raw": 4.45,
+                        "fmt": "4.45"
+                    },
+                    "volume": {
+                        "raw": 2,
+                        "fmt": "2",
+                        "longFmt": "2"
+                    },
+                    "lastTradeDate": {
+                        "raw": 1538193051,
+                        "fmt": "2018-09-29",
+                        "longFmt": "2018-09-29T03:50"
+                    },
+                    "bid": {
+                        "raw": 2.22,
+                        "fmt": "2.22"
+                    }
+                }
+            ],
+            "puts": [
+                {
+                    "contractSymbol": "JWN210115P00035000",
+                    "impliedVolatility": {
+                        "raw": 0.4061338684082031,
+                        "fmt": "40.61%"
+                    },
+                    "expiration": {
+                        "raw": 1610668800,
+                        "fmt": "2021-01-15",
+                        "longFmt": "2021-01-15T00:00"
+                    },
+                    "change": {
+                        "raw": 0,
+                        "fmt": "0.00"
+                    },
+                    "currency": "USD",
+                    "strike": {
+                        "raw": 35,
+                        "fmt": "35.00"
+                    },
+                    "contractSize": "REGULAR",
+                    "lastPrice": {
+                        "raw": 2.49,
+                        "fmt": "2.49"
+                    },
+                    "inTheMoney": false,
+                    "openInterest": {
+                        "raw": 2,
+                        "fmt": "2",
+                        "longFmt": "2"
+                    },
+                    "percentChange": {
+                        "raw": 0,
+                        "fmt": "0.00%"
+                    },
+                    "ask": {
+                        "raw": 2.8,
+                        "fmt": "2.80"
+                    },
+                    "volume": {
+                        "raw": 1,
+                        "fmt": "1",
+                        "longFmt": "1"
+                    },
+                    "lastTradeDate": {
+                        "raw": 1537896512,
+                        "fmt": "2018-09-25",
+                        "longFmt": "2018-09-25T17:28"
+                    },
+                    "bid": {
+                        "raw": 1.71,
+                        "fmt": "1.71"
+                    }
+                },
+                {
+                    "contractSymbol": "JWN210115P00040000",
+                    "impliedVolatility": {
+                        "raw": 0.39551385742187506,
+                        "fmt": "39.55%"
+                    },
+                    "expiration": {
+                        "raw": 1610668800,
+                        "fmt": "2021-01-15",
+                        "longFmt": "2021-01-15T00:00"
+                    },
+                    "change": {
+                        "raw": -0.099999905,
+                        "fmt": "-0.10"
+                    },
+                    "currency": "USD",
+                    "strike": {
+                        "raw": 40,
+                        "fmt": "40.00"
+                    },
+                    "contractSize": "REGULAR",
+                    "lastPrice": {
+                        "raw": 3.4,
+                        "fmt": "3.40"
+                    },
+                    "inTheMoney": false,
+                    "openInterest": {
+                        "raw": 5,
+                        "fmt": "5",
+                        "longFmt": "5"
+                    },
+                    "percentChange": {
+                        "raw": -2.85714,
+                        "fmt": "-2.86%"
+                    },
+                    "ask": {
+                        "raw": 4.15,
+                        "fmt": "4.15"
+                    },
+                    "volume": {
+                        "raw": 5,
+                        "fmt": "5",
+                        "longFmt": "5"
+                    },
+                    "lastTradeDate": {
+                        "raw": 1538417511,
+                        "fmt": "2018-10-01",
+                        "longFmt": "2018-10-01T18:11"
+                    },
+                    "bid": {
+                        "raw": 2.83,
+                        "fmt": "2.83"
+                    }
+                },
+                {
+                    "contractSymbol": "JWN210115P00050000",
+                    "impliedVolatility": {
+                        "raw": 0.37879039184570307,
+                        "fmt": "37.88%"
+                    },
+                    "expiration": {
+                        "raw": 1610668800,
+                        "fmt": "2021-01-15",
+                        "longFmt": "2021-01-15T00:00"
+                    },
+                    "change": {
+                        "raw": 0,
+                        "fmt": "0.00"
+                    },
+                    "currency": "USD",
+                    "strike": {
+                        "raw": 50,
+                        "fmt": "50.00"
+                    },
+                    "contractSize": "REGULAR",
+                    "lastPrice": {
+                        "raw": 6.36,
+                        "fmt": "6.36"
+                    },
+                    "inTheMoney": false,
+                    "openInterest": {
+                        "raw": 0,
+                        "fmt": "0",
+                        "longFmt": "0"
+                    },
+                    "percentChange": {
+                        "raw": 0,
+                        "fmt": "0.00%"
+                    },
+                    "ask": {
+                        "raw": 7.85,
+                        "fmt": "7.85"
+                    },
+                    "volume": {
+                        "raw": 15,
+                        "fmt": "15",
+                        "longFmt": "15"
+                    },
+                    "lastTradeDate": {
+                        "raw": 1537588457,
+                        "fmt": "2018-09-22",
+                        "longFmt": "2018-09-22T03:54"
+                    },
+                    "bid": {
+                        "raw": 5.35,
+                        "fmt": "5.35"
+                    }
+                }
+            ],
+            "displayed": {
+                "calls": {
+                    "contracts": [
+                        {
+                            "contractSymbol": "JWN210115C00035000",
+                            "impliedVolatility": {
+                                "raw": 0.44751529052734373,
+                                "fmt": "44.75%"
+                            },
+                            "expiration": {
+                                "raw": 1610668800,
+                                "fmt": "2021-01-15",
+                                "longFmt": "2021-01-15T00:00"
+                            },
+                            "change": {
+                                "raw": 0,
+                                "fmt": "0.00"
+                            },
+                            "currency": "USD",
+                            "strike": {
+                                "raw": 35,
+                                "fmt": "35.00"
+                            },
+                            "contractSize": "REGULAR",
+                            "lastPrice": {
+                                "raw": 26.52,
+                                "fmt": "26.52"
+                            },
+                            "inTheMoney": true,
+                            "openInterest": {
+                                "raw": 7,
+                                "fmt": "7",
+                                "longFmt": "7"
+                            },
+                            "percentChange": {
+                                "raw": 0,
+                                "fmt": "0.00%"
+                            },
+                            "ask": {
+                                "raw": 29.2,
+                                "fmt": "29.20"
+                            },
+                            "volume": {
+                                "raw": 6,
+                                "fmt": "6",
+                                "longFmt": "6"
+                            },
+                            "lastTradeDate": {
+                                "raw": 1537889376,
+                                "fmt": "2018-09-25",
+                                "longFmt": "2018-09-25T15:29"
+                            },
+                            "bid": {
+                                "raw": 24.75,
+                                "fmt": "24.75"
+                            }
+                        },
+                        {
+                            "contractSymbol": "JWN210115C00065000",
+                            "impliedVolatility": {
+                                "raw": 0.36749900085449216,
+                                "fmt": "36.75%"
+                            },
+                            "expiration": {
+                                "raw": 1610668800,
+                                "fmt": "2021-01-15",
+                                "longFmt": "2021-01-15T00:00"
+                            },
+                            "change": {
+                                "raw": 0,
+                                "fmt": "0.00"
+                            },
+                            "currency": "USD",
+                            "strike": {
+                                "raw": 65,
+                                "fmt": "65.00"
+                            },
+                            "contractSize": "REGULAR",
+                            "lastPrice": {
+                                "raw": 8.7,
+                                "fmt": "8.70"
+                            },
+                            "inTheMoney": false,
+                            "openInterest": {
+                                "raw": 27,
+                                "fmt": "27",
+                                "longFmt": "27"
+                            },
+                            "percentChange": {
+                                "raw": 0,
+                                "fmt": "0.00%"
+                            },
+                            "ask": {
+                                "raw": 11.7,
+                                "fmt": "11.70"
+                            },
+                            "volume": {
+                                "raw": 3,
+                                "fmt": "3",
+                                "longFmt": "3"
+                            },
+                            "lastTradeDate": {
+                                "raw": 1537894814,
+                                "fmt": "2018-09-25",
+                                "longFmt": "2018-09-25T17:00"
+                            },
+                            "bid": {
+                                "raw": 8,
+                                "fmt": "8.00"
+                            }
+                        },
+                        {
+                            "contractSymbol": "JWN210115C00072500",
+                            "impliedVolatility": {
+                                "raw": 0.3690858990478516,
+                                "fmt": "36.91%"
+                            },
+                            "expiration": {
+                                "raw": 1610668800,
+                                "fmt": "2021-01-15",
+                                "longFmt": "2021-01-15T00:00"
+                            },
+                            "change": {
+                                "raw": 0,
+                                "fmt": "0.00"
+                            },
+                            "currency": "USD",
+                            "strike": {
+                                "raw": 72.5,
+                                "fmt": "72.50"
+                            },
+                            "contractSize": "REGULAR",
+                            "lastPrice": {
+                                "raw": 8.04,
+                                "fmt": "8.04"
+                            },
+                            "inTheMoney": false,
+                            "openInterest": {
+                                "raw": 0,
+                                "fmt": "0",
+                                "longFmt": "0"
+                            },
+                            "percentChange": {
+                                "raw": 0,
+                                "fmt": "0.00%"
+                            },
+                            "ask": {
+                                "raw": 9.45,
+                                "fmt": "9.45"
+                            },
+                            "volume": {
+                                "raw": 15,
+                                "fmt": "15",
+                                "longFmt": "15"
+                            },
+                            "lastTradeDate": {
+                                "raw": 1537588456,
+                                "fmt": "2018-09-22",
+                                "longFmt": "2018-09-22T03:54"
+                            },
+                            "bid": {
+                                "raw": 5.8,
+                                "fmt": "5.80"
+                            }
+                        },
+                        {
+                            "contractSymbol": "JWN210115C00090000",
+                            "impliedVolatility": {
+                                "raw": 0.3303289624023437,
+                                "fmt": "33.03%"
+                            },
+                            "expiration": {
+                                "raw": 1610668800,
+                                "fmt": "2021-01-15",
+                                "longFmt": "2021-01-15T00:00"
+                            },
+                            "change": {
+                                "raw": 0,
+                                "fmt": "0.00"
+                            },
+                            "currency": "USD",
+                            "strike": {
+                                "raw": 90,
+                                "fmt": "90.00"
+                            },
+                            "contractSize": "REGULAR",
+                            "lastPrice": {
+                                "raw": 3.5,
+                                "fmt": "3.50"
+                            },
+                            "inTheMoney": false,
+                            "openInterest": {
+                                "raw": 2,
+                                "fmt": "2",
+                                "longFmt": "2"
+                            },
+                            "percentChange": {
+                                "raw": 0,
+                                "fmt": "0.00%"
+                            },
+                            "ask": {
+                                "raw": 4.45,
+                                "fmt": "4.45"
+                            },
+                            "volume": {
+                                "raw": 2,
+                                "fmt": "2",
+                                "longFmt": "2"
+                            },
+                            "lastTradeDate": {
+                                "raw": 1538193051,
+                                "fmt": "2018-09-29",
+                                "longFmt": "2018-09-29T03:50"
+                            },
+                            "bid": {
+                                "raw": 2.22,
+                                "fmt": "2.22"
+                            }
+                        }
+                    ],
+                    "sortColumn": "strike",
+                    "sortState": 1
+                },
+                "puts": {
+                    "contracts": [
+                        {
+                            "contractSymbol": "JWN210115P00035000",
+                            "impliedVolatility": {
+                                "raw": 0.4061338684082031,
+                                "fmt": "40.61%"
+                            },
+                            "expiration": {
+                                "raw": 1610668800,
+                                "fmt": "2021-01-15",
+                                "longFmt": "2021-01-15T00:00"
+                            },
+                            "change": {
+                                "raw": 0,
+                                "fmt": "0.00"
+                            },
+                            "currency": "USD",
+                            "strike": {
+                                "raw": 35,
+                                "fmt": "35.00"
+                            },
+                            "contractSize": "REGULAR",
+                            "lastPrice": {
+                                "raw": 2.49,
+                                "fmt": "2.49"
+                            },
+                            "inTheMoney": false,
+                            "openInterest": {
+                                "raw": 2,
+                                "fmt": "2",
+                                "longFmt": "2"
+                            },
+                            "percentChange": {
+                                "raw": 0,
+                                "fmt": "0.00%"
+                            },
+                            "ask": {
+                                "raw": 2.8,
+                                "fmt": "2.80"
+                            },
+                            "volume": {
+                                "raw": 1,
+                                "fmt": "1",
+                                "longFmt": "1"
+                            },
+                            "lastTradeDate": {
+                                "raw": 1537896512,
+                                "fmt": "2018-09-25",
+                                "longFmt": "2018-09-25T17:28"
+                            },
+                            "bid": {
+                                "raw": 1.71,
+                                "fmt": "1.71"
+                            }
+                        },
+                        {
+                            "contractSymbol": "JWN210115P00040000",
+                            "impliedVolatility": {
+                                "raw": 0.39551385742187506,
+                                "fmt": "39.55%"
+                            },
+                            "expiration": {
+                                "raw": 1610668800,
+                                "fmt": "2021-01-15",
+                                "longFmt": "2021-01-15T00:00"
+                            },
+                            "change": {
+                                "raw": -0.099999905,
+                                "fmt": "-0.10"
+                            },
+                            "currency": "USD",
+                            "strike": {
+                                "raw": 40,
+                                "fmt": "40.00"
+                            },
+                            "contractSize": "REGULAR",
+                            "lastPrice": {
+                                "raw": 3.4,
+                                "fmt": "3.40"
+                            },
+                            "inTheMoney": false,
+                            "openInterest": {
+                                "raw": 5,
+                                "fmt": "5",
+                                "longFmt": "5"
+                            },
+                            "percentChange": {
+                                "raw": -2.85714,
+                                "fmt": "-2.86%"
+                            },
+                            "ask": {
+                                "raw": 4.15,
+                                "fmt": "4.15"
+                            },
+                            "volume": {
+                                "raw": 5,
+                                "fmt": "5",
+                                "longFmt": "5"
+                            },
+                            "lastTradeDate": {
+                                "raw": 1538417511,
+                                "fmt": "2018-10-01",
+                                "longFmt": "2018-10-01T18:11"
+                            },
+                            "bid": {
+                                "raw": 2.83,
+                                "fmt": "2.83"
+                            }
+                        },
+                        {
+                            "contractSymbol": "JWN210115P00050000",
+                            "impliedVolatility": {
+                                "raw": 0.37879039184570307,
+                                "fmt": "37.88%"
+                            },
+                            "expiration": {
+                                "raw": 1610668800,
+                                "fmt": "2021-01-15",
+                                "longFmt": "2021-01-15T00:00"
+                            },
+                            "change": {
+                                "raw": 0,
+                                "fmt": "0.00"
+                            },
+                            "currency": "USD",
+                            "strike": {
+                                "raw": 50,
+                                "fmt": "50.00"
+                            },
+                            "contractSize": "REGULAR",
+                            "lastPrice": {
+                                "raw": 6.36,
+                                "fmt": "6.36"
+                            },
+                            "inTheMoney": false,
+                            "openInterest": {
+                                "raw": 0,
+                                "fmt": "0",
+                                "longFmt": "0"
+                            },
+                            "percentChange": {
+                                "raw": 0,
+                                "fmt": "0.00%"
+                            },
+                            "ask": {
+                                "raw": 7.85,
+                                "fmt": "7.85"
+                            },
+                            "volume": {
+                                "raw": 15,
+                                "fmt": "15",
+                                "longFmt": "15"
+                            },
+                            "lastTradeDate": {
+                                "raw": 1537588457,
+                                "fmt": "2018-09-22",
+                                "longFmt": "2018-09-22T03:54"
+                            },
+                            "bid": {
+                                "raw": 5.35,
+                                "fmt": "5.35"
+                            }
+                        }
+                    ],
+                    "sortColumn": "strike",
+                    "sortState": 1
+                }
+            }
+        },
+        "isStraddle": false
+    }
+}

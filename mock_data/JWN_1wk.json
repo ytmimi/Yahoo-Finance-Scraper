@@ -1,0 +1,1162 @@
+{
+    "StreamDataStore": {
+        "quoteData": {
+            "JWN": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 60.03,
+                    "fmt": "60.03"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424081,
+                    "fmt": "4:01PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "37.79 - 66.33",
+                    "fmt": "37.79 - 66.33"
+                },
+                "sharesOutstanding": {
+                    "raw": 168564992,
+                    "fmt": "168.565M",
+                    "longFmt": "168,564,992"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 61.12,
+                    "fmt": "61.12"
+                },
+                "shortName": "Nordstrom, Inc.",
+                "longName": "Nordstrom, Inc.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": 0.8199997,
+                    "fmt": "0.82"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 59.81,
+                    "fmt": "59.81"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -5.700001,
+                    "fmt": "-5.70"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 22.84,
+                    "fmt": "22.84"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 59.81,
+                    "fmt": "59.81"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 60.63,
+                    "fmt": "60.63"
+                },
+                "regularMarketVolume": {
+                    "raw": 2078568,
+                    "fmt": "2.079M",
+                    "longFmt": "2,078,568"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 10220095488,
+                    "fmt": "10.22B",
+                    "longFmt": "10,220,095,488"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "JWN",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.6043927,
+                    "fmt": "60.44%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "59.81 - 61.12",
+                    "fmt": "59.81 - 61.12"
+                },
+                "messageBoardId": "finmb_32215",
+                "fiftyTwoWeekHigh": {
+                    "raw": 66.33,
+                    "fmt": "66.33"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.085933976,
+                    "fmt": "-8.59%"
+                },
+                "uuid": "e047eab7-a971-3544-bbdb-fb89756f34f3",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 37.79,
+                    "fmt": "37.79"
+                },
+                "regularMarketChangePercent": {
+                    "raw": 1.3710077,
+                    "fmt": "1.37%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "M": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 34.56,
+                    "fmt": "34.56"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424088,
+                    "fmt": "4:01PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "17.41 - 41.99",
+                    "fmt": "17.41 - 41.99"
+                },
+                "sharesOutstanding": {
+                    "raw": 306972992,
+                    "fmt": "306.973M",
+                    "longFmt": "306,972,992"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 34.98,
+                    "fmt": "34.98"
+                },
+                "shortName": "Macy's Inc",
+                "longName": "Macy's, Inc.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": -0.020000458,
+                    "fmt": "-0.02"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 34.73,
+                    "fmt": "34.73"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -7.2800026,
+                    "fmt": "-7.28"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 17.3,
+                    "fmt": "17.30"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 34.4,
+                    "fmt": "34.40"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 34.71,
+                    "fmt": "34.71"
+                },
+                "regularMarketVolume": {
+                    "raw": 4162542,
+                    "fmt": "4.163M",
+                    "longFmt": "4,162,542"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 10655032320,
+                    "fmt": "10.655B",
+                    "longFmt": "10,655,032,320"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "M",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.9936817,
+                    "fmt": "99.37%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "34.4 - 34.98",
+                    "fmt": "34.40 - 34.98"
+                },
+                "messageBoardId": "finmb_318091",
+                "fiftyTwoWeekHigh": {
+                    "raw": 41.99,
+                    "fmt": "41.99"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.17337467,
+                    "fmt": "-17.34%"
+                },
+                "uuid": "69691c7b-dcc3-3e6d-9d8a-1361f22d04ac",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 17.41,
+                    "fmt": "17.41"
+                },
+                "regularMarketChangePercent": {
+                    "raw": -0.057588417,
+                    "fmt": "-0.06%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "KSS": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 74.7,
+                    "fmt": "74.70"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424108,
+                    "fmt": "4:01PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "37.97 - 82.42",
+                    "fmt": "37.97 - 82.42"
+                },
+                "sharesOutstanding": {
+                    "raw": 166712992,
+                    "fmt": "166.713M",
+                    "longFmt": "166,712,992"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 76.51,
+                    "fmt": "76.51"
+                },
+                "shortName": "Kohl's Corporation",
+                "longName": "Kohl's Corporation",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": 1.5,
+                    "fmt": "1.50"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 74.55,
+                    "fmt": "74.55"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -6.369995,
+                    "fmt": "-6.37"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 38.08,
+                    "fmt": "38.08"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 74.34,
+                    "fmt": "74.34"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 76.05,
+                    "fmt": "76.05"
+                },
+                "regularMarketVolume": {
+                    "raw": 2826362,
+                    "fmt": "2.826M",
+                    "longFmt": "2,826,362"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 12678523904,
+                    "fmt": "12.679B",
+                    "longFmt": "12,678,523,904"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "KSS",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 1.002897,
+                    "fmt": "100.29%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "74.34 - 76.51",
+                    "fmt": "74.34 - 76.51"
+                },
+                "messageBoardId": "finmb_61243",
+                "fiftyTwoWeekHigh": {
+                    "raw": 82.42,
+                    "fmt": "82.42"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.07728701,
+                    "fmt": "-7.73%"
+                },
+                "uuid": "e2f43810-0384-3696-9e73-3c01eadedcc6",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 37.97,
+                    "fmt": "37.97"
+                },
+                "regularMarketChangePercent": {
+                    "raw": 2.0120723,
+                    "fmt": "2.01%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "GPS": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 29.05,
+                    "fmt": "29.05"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424137,
+                    "fmt": "4:02PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "25.36 - 35.68",
+                    "fmt": "25.36 - 35.68"
+                },
+                "sharesOutstanding": {
+                    "raw": 384708000,
+                    "fmt": "384.708M",
+                    "longFmt": "384,708,000"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 29.05,
+                    "fmt": "29.05"
+                },
+                "shortName": "Gap, Inc. (The)",
+                "longName": "The Gap, Inc.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": -0.13000107,
+                    "fmt": "-0.13"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 28.85,
+                    "fmt": "28.85"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -6.960001,
+                    "fmt": "-6.96"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 3.3599987,
+                    "fmt": "3.36"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 28.39,
+                    "fmt": "28.39"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 28.72,
+                    "fmt": "28.72"
+                },
+                "regularMarketVolume": {
+                    "raw": 4499660,
+                    "fmt": "4.5M",
+                    "longFmt": "4,499,660"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 11048813568,
+                    "fmt": "11.049B",
+                    "longFmt": "11,048,813,568"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "GPS",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.13249207,
+                    "fmt": "13.25%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "28.39 - 29.05",
+                    "fmt": "28.39 - 29.05"
+                },
+                "messageBoardId": "finmb_274265",
+                "fiftyTwoWeekHigh": {
+                    "raw": 35.68,
+                    "fmt": "35.68"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.19506729,
+                    "fmt": "-19.51%"
+                },
+                "uuid": "8c578de3-7278-3da4-88d7-63ea86c5cf20",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 25.36,
+                    "fmt": "25.36"
+                },
+                "regularMarketChangePercent": {
+                    "raw": -0.45061028,
+                    "fmt": "-0.45%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "TIF": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 129.24,
+                    "fmt": "129.24"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424108,
+                    "fmt": "4:01PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "90.46 - 141.64",
+                    "fmt": "90.46 - 141.64"
+                },
+                "sharesOutstanding": {
+                    "raw": 122411000,
+                    "fmt": "122.411M",
+                    "longFmt": "122,411,000"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 129.81,
+                    "fmt": "129.81"
+                },
+                "shortName": "Tiffany & Co.",
+                "longName": "Tiffany &amp; Co.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": -0.6199951,
+                    "fmt": "-0.62"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 128.97,
+                    "fmt": "128.97"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -13.289993,
+                    "fmt": "-13.29"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 37.890007,
+                    "fmt": "37.89"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 127.17,
+                    "fmt": "127.17"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 128.35,
+                    "fmt": "128.35"
+                },
+                "regularMarketVolume": {
+                    "raw": 1534846,
+                    "fmt": "1.535M",
+                    "longFmt": "1,534,846"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 15711452160,
+                    "fmt": "15.711B",
+                    "longFmt": "15,711,452,160"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "TIF",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.41885924,
+                    "fmt": "41.89%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "127.17 - 129.81",
+                    "fmt": "127.17 - 129.81"
+                },
+                "messageBoardId": "finmb_35576",
+                "fiftyTwoWeekHigh": {
+                    "raw": 141.64,
+                    "fmt": "141.64"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.09382938,
+                    "fmt": "-9.38%"
+                },
+                "uuid": "94428806-80eb-3d7f-b60d-15f422004547",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 90.46,
+                    "fmt": "90.46"
+                },
+                "regularMarketChangePercent": {
+                    "raw": -0.48072818,
+                    "fmt": "-0.48%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            },
+            "JCP": {
+                "sourceInterval": 15,
+                "regularMarketOpen": {
+                    "raw": 1.67,
+                    "fmt": "1.67"
+                },
+                "exchange": "NYQ",
+                "regularMarketTime": {
+                    "raw": 1538424252,
+                    "fmt": "4:04PM EDT"
+                },
+                "fiftyTwoWeekRange": {
+                    "raw": "1.55 - 4.75",
+                    "fmt": "1.55 - 4.75"
+                },
+                "sharesOutstanding": {
+                    "raw": 314800000,
+                    "fmt": "314.8M",
+                    "longFmt": "314,800,000"
+                },
+                "regularMarketDayHigh": {
+                    "raw": 1.71,
+                    "fmt": "1.71"
+                },
+                "shortName": "J.C. Penney Company, Inc. Holdi",
+                "longName": "J. C. Penney Company, Inc.",
+                "exchangeTimezoneName": "America/New_York",
+                "regularMarketChange": {
+                    "raw": 0.04000008,
+                    "fmt": "0.04"
+                },
+                "regularMarketPreviousClose": {
+                    "raw": 1.66,
+                    "fmt": "1.66"
+                },
+                "fiftyTwoWeekHighChange": {
+                    "raw": -3.05,
+                    "fmt": "-3.05"
+                },
+                "exchangeTimezoneShortName": "EDT",
+                "fiftyTwoWeekLowChange": {
+                    "raw": 0.1500001,
+                    "fmt": "0.15"
+                },
+                "exchangeDataDelayedBy": 0,
+                "regularMarketDayLow": {
+                    "raw": 1.67,
+                    "fmt": "1.67"
+                },
+                "priceHint": 2,
+                "currency": "USD",
+                "regularMarketPrice": {
+                    "raw": 1.7,
+                    "fmt": "1.70"
+                },
+                "regularMarketVolume": {
+                    "raw": 6745137,
+                    "fmt": "6.745M",
+                    "longFmt": "6,745,137"
+                },
+                "isLoading": false,
+                "gmtOffSetMilliseconds": -14400000,
+                "region": "US",
+                "marketState": "POST",
+                "marketCap": {
+                    "raw": 535160000,
+                    "fmt": "535.16M",
+                    "longFmt": "535,160,000"
+                },
+                "quoteType": "EQUITY",
+                "invalid": false,
+                "symbol": "JCP",
+                "language": "en-US",
+                "fiftyTwoWeekLowChangePercent": {
+                    "raw": 0.09677426,
+                    "fmt": "9.68%"
+                },
+                "regularMarketDayRange": {
+                    "raw": "1.67 - 1.71",
+                    "fmt": "1.67 - 1.71"
+                },
+                "messageBoardId": "finmb_295624",
+                "fiftyTwoWeekHigh": {
+                    "raw": 4.75,
+                    "fmt": "4.75"
+                },
+                "fiftyTwoWeekHighChangePercent": {
+                    "raw": -0.6421053,
+                    "fmt": "-64.21%"
+                },
+                "uuid": "0440a8c5-fef1-3bb1-a12a-537612cef9e8",
+                "market": "us_market",
+                "fiftyTwoWeekLow": {
+                    "raw": 1.55,
+                    "fmt": "1.55"
+                },
+                "regularMarketChangePercent": {
+                    "raw": 2.4096434,
+                    "fmt": "2.41%"
+                },
+                "fullExchangeName": "NYSE",
+                "tradeable": true
+            }
+        },
+        "mktmData": {}
+    },
+    "HistoricalPriceStore": {
+        "prices": [
+            {
+                "date": 1537761600,
+                "open": 60.33000183105469,
+                "high": 60.86000061035156,
+                "low": 59.470001220703125,
+                "close": 59.7400016784668,
+                "volume": 4261800,
+                "adjclose": 59.7400016784668
+            },
+            {
+                "date": 1537156800,
+                "open": 65.4000015258789,
+                "high": 65.45999908447266,
+                "low": 60.16999816894531,
+                "close": 60.34000015258789,
+                "volume": 11975300,
+                "adjclose": 60.34000015258789
+            },
+            {
+                "date": 1536552000,
+                "open": 65.9800033569336,
+                "high": 66.2699966430664,
+                "low": 64.30999755859375,
+                "close": 65.5,
+                "volume": 8337900,
+                "adjclose": 65.5
+            },
+            {
+                "date": 1535947200,
+                "open": 63.369998931884766,
+                "high": 66.33000183105469,
+                "low": 63.29999923706055,
+                "close": 65.72000122070312,
+                "volume": 13308200,
+                "adjclose": 65.72000122070312
+            },
+            {
+                "amount": 0.37,
+                "date": 1535722200,
+                "type": "DIVIDEND",
+                "data": 0.37
+            },
+            {
+                "date": 1535342400,
+                "open": 61.9900016784668,
+                "high": 63.029998779296875,
+                "low": 59.91999816894531,
+                "close": 62.849998474121094,
+                "volume": 12531900,
+                "adjclose": 62.47643280029297
+            },
+            {
+                "date": 1534737600,
+                "open": 59.38999938964844,
+                "high": 62.7400016784668,
+                "low": 59.06999969482422,
+                "close": 62.060001373291016,
+                "volume": 23437300,
+                "adjclose": 61.691131591796875
+            },
+            {
+                "date": 1534132800,
+                "open": 52.70000076293945,
+                "high": 59.25,
+                "low": 50.93000030517578,
+                "close": 59.18000030517578,
+                "volume": 31110600,
+                "adjclose": 58.8282470703125
+            },
+            {
+                "date": 1533528000,
+                "open": 50.2400016784668,
+                "high": 53.29999923706055,
+                "low": 50.060001373291016,
+                "close": 52.58000183105469,
+                "volume": 10391000,
+                "adjclose": 52.267478942871094
+            },
+            {
+                "date": 1532923200,
+                "open": 51.88999938964844,
+                "high": 53.099998474121094,
+                "low": 49.880001068115234,
+                "close": 50.58000183105469,
+                "volume": 9100000,
+                "adjclose": 50.27936553955078
+            },
+            {
+                "date": 1532318400,
+                "open": 52.47999954223633,
+                "high": 54.279998779296875,
+                "low": 51.810001373291016,
+                "close": 51.970001220703125,
+                "volume": 7032900,
+                "adjclose": 51.661102294921875
+            },
+            {
+                "date": 1531713600,
+                "open": 52.2400016784668,
+                "high": 54.61000061035156,
+                "low": 51.65999984741211,
+                "close": 52.59000015258789,
+                "volume": 9649500,
+                "adjclose": 52.27741622924805
+            },
+            {
+                "date": 1531108800,
+                "open": 54,
+                "high": 54.11000061035156,
+                "low": 50.310001373291016,
+                "close": 52.18000030517578,
+                "volume": 20427400,
+                "adjclose": 51.86985397338867
+            },
+            {
+                "date": 1530504000,
+                "open": 50,
+                "high": 54.09000015258789,
+                "low": 49.130001068115234,
+                "close": 53.95000076293945,
+                "volume": 10175400,
+                "adjclose": 53.62933349609375
+            },
+            {
+                "date": 1529899200,
+                "open": 51.16999816894531,
+                "high": 52.810001373291016,
+                "low": 50.349998474121094,
+                "close": 51.779998779296875,
+                "volume": 8406100,
+                "adjclose": 51.47222900390625
+            },
+            {
+                "date": 1529294400,
+                "open": 50.349998474121094,
+                "high": 53.04999923706055,
+                "low": 50.2599983215332,
+                "close": 51.43000030517578,
+                "volume": 8695600,
+                "adjclose": 51.12431335449219
+            },
+            {
+                "date": 1528689600,
+                "open": 52.5,
+                "high": 53.36000061035156,
+                "low": 49.40999984741211,
+                "close": 50.4900016784668,
+                "volume": 11449900,
+                "adjclose": 50.18989944458008
+            },
+            {
+                "date": 1528084800,
+                "open": 49.83000183105469,
+                "high": 53.40999984741211,
+                "low": 49.7400016784668,
+                "close": 52.470001220703125,
+                "volume": 10501800,
+                "adjclose": 52.15813064575195
+            },
+            {
+                "date": 1527480000,
+                "open": 48.689998626708984,
+                "high": 50.08000183105469,
+                "low": 48.310001373291016,
+                "close": 49.59000015258789,
+                "volume": 6803300,
+                "adjclose": 49.295249938964844
+            },
+            {
+                "date": 1526875200,
+                "open": 45.72999954223633,
+                "high": 49.380001068115234,
+                "low": 45.25,
+                "close": 48.93000030517578,
+                "volume": 15852300,
+                "adjclose": 48.6391716003418
+            },
+            {
+                "amount": 0.37,
+                "date": 1526563800,
+                "type": "DIVIDEND",
+                "data": 0.37
+            },
+            {
+                "date": 1526270400,
+                "open": 49,
+                "high": 51.869998931884766,
+                "low": 45.349998474121094,
+                "close": 45.36000061035156,
+                "volume": 23329300,
+                "adjclose": 44.76358413696289
+            },
+            {
+                "date": 1525665600,
+                "open": 49.7400016784668,
+                "high": 49.7400016784668,
+                "low": 47.560001373291016,
+                "close": 48.79999923706055,
+                "volume": 6740200,
+                "adjclose": 48.158355712890625
+            },
+            {
+                "date": 1525060800,
+                "open": 51.709999084472656,
+                "high": 52.13999938964844,
+                "low": 48.56999969482422,
+                "close": 49.4900016784668,
+                "volume": 8230200,
+                "adjclose": 48.83928298950195
+            },
+            {
+                "date": 1524456000,
+                "open": 46.81999969482422,
+                "high": 51.619998931884766,
+                "low": 46.720001220703125,
+                "close": 51.599998474121094,
+                "volume": 8390100,
+                "adjclose": 50.92153549194336
+            },
+            {
+                "date": 1523851200,
+                "open": 47.65999984741211,
+                "high": 48.34000015258789,
+                "low": 45.810001373291016,
+                "close": 46.779998779296875,
+                "volume": 6737600,
+                "adjclose": 46.16490936279297
+            },
+            {
+                "date": 1523246400,
+                "open": 48.369998931884766,
+                "high": 49.81999969482422,
+                "low": 47.150001525878906,
+                "close": 47.38999938964844,
+                "volume": 6705200,
+                "adjclose": 46.76689147949219
+            },
+            {
+                "date": 1522641600,
+                "open": 48.290000915527344,
+                "high": 50.13999938964844,
+                "low": 46.709999084472656,
+                "close": 48.029998779296875,
+                "volume": 6645100,
+                "adjclose": 47.39847946166992
+            },
+            {
+                "date": 1522036800,
+                "open": 46.88999938964844,
+                "high": 49.11000061035156,
+                "low": 46.63999938964844,
+                "close": 48.40999984741211,
+                "volume": 5606100,
+                "adjclose": 47.77348327636719
+            },
+            {
+                "date": 1521432000,
+                "open": 49.34000015258789,
+                "high": 49.77000045776367,
+                "low": 46.25,
+                "close": 46.36000061035156,
+                "volume": 9009700,
+                "adjclose": 45.75043487548828
+            },
+            {
+                "date": 1520827200,
+                "open": 49.90999984741211,
+                "high": 50.970001220703125,
+                "low": 48.72999954223633,
+                "close": 49.31999969482422,
+                "volume": 8296500,
+                "adjclose": 48.67151641845703
+            },
+            {
+                "date": 1520226000,
+                "open": 52.900001525878906,
+                "high": 53.18000030517578,
+                "low": 49.380001068115234,
+                "close": 49.9900016784668,
+                "volume": 13148500,
+                "adjclose": 49.33271026611328
+            },
+            {
+                "amount": 0.37,
+                "date": 1520001000,
+                "type": "DIVIDEND",
+                "data": 0.37
+            },
+            {
+                "date": 1519621200,
+                "open": 53.630001068115234,
+                "high": 53.79999923706055,
+                "low": 47.459999084472656,
+                "close": 53.040000915527344,
+                "volume": 15566200,
+                "adjclose": 51.95895004272461
+            },
+            {
+                "date": 1519016400,
+                "open": 50.970001220703125,
+                "high": 54,
+                "low": 50,
+                "close": 53.560001373291016,
+                "volume": 10612200,
+                "adjclose": 52.46835708618164
+            },
+            {
+                "date": 1518411600,
+                "open": 48.18000030517578,
+                "high": 51.79999923706055,
+                "low": 47.66999816894531,
+                "close": 51.5,
+                "volume": 6078000,
+                "adjclose": 50.450340270996094
+            },
+            {
+                "date": 1517806800,
+                "open": 47.58000183105469,
+                "high": 50.150001525878906,
+                "low": 46.099998474121094,
+                "close": 47.88999938964844,
+                "volume": 11178900,
+                "adjclose": 46.91391372680664
+            },
+            {
+                "date": 1517202000,
+                "open": 50.25,
+                "high": 51.25,
+                "low": 47.529998779296875,
+                "close": 47.849998474121094,
+                "volume": 7557000,
+                "adjclose": 46.874732971191406
+            },
+            {
+                "date": 1516597200,
+                "open": 52,
+                "high": 52.83000183105469,
+                "low": 49.04999923706055,
+                "close": 50.400001525878906,
+                "volume": 9202600,
+                "adjclose": 49.37275695800781
+            },
+            {
+                "date": 1515992400,
+                "open": 51.849998474121094,
+                "high": 52.099998474121094,
+                "low": 50.040000915527344,
+                "close": 52,
+                "volume": 5579300,
+                "adjclose": 50.940147399902344
+            },
+            {
+                "date": 1515387600,
+                "open": 48.560001373291016,
+                "high": 53,
+                "low": 47.45000076293945,
+                "close": 51.81999969482422,
+                "volume": 13798300,
+                "adjclose": 50.763816833496094
+            },
+            {
+                "date": 1514782800,
+                "open": 48.7599983215332,
+                "high": 49.86000061035156,
+                "low": 46.29999923706055,
+                "close": 48.25,
+                "volume": 9405700,
+                "adjclose": 47.26657485961914
+            },
+            {
+                "date": 1514178000,
+                "open": 47.599998474121094,
+                "high": 49.09000015258789,
+                "low": 47.189998626708984,
+                "close": 47.380001068115234,
+                "volume": 6061600,
+                "adjclose": 46.414310455322266
+            },
+            {
+                "date": 1513573200,
+                "open": 45.7400016784668,
+                "high": 47.75,
+                "low": 45.619998931884766,
+                "close": 47.540000915527344,
+                "volume": 7828500,
+                "adjclose": 46.5710563659668
+            },
+            {
+                "date": 1512968400,
+                "open": 45.959999084472656,
+                "high": 46.84000015258789,
+                "low": 44.86000061035156,
+                "close": 45.4900016784668,
+                "volume": 9293900,
+                "adjclose": 44.562835693359375
+            },
+            {
+                "date": 1512363600,
+                "open": 46.13999938964844,
+                "high": 47.849998474121094,
+                "low": 44.68000030517578,
+                "close": 45.779998779296875,
+                "volume": 12054100,
+                "adjclose": 44.846920013427734
+            },
+            {
+                "date": 1511758800,
+                "open": 41.08000183105469,
+                "high": 46.959999084472656,
+                "low": 40.61000061035156,
+                "close": 45.5,
+                "volume": 19650800,
+                "adjclose": 44.572628021240234
+            },
+            {
+                "amount": 0.37,
+                "date": 1511533800,
+                "type": "DIVIDEND",
+                "data": 0.37
+            },
+            {
+                "date": 1511154000,
+                "open": 40.90999984741211,
+                "high": 41.880001068115234,
+                "low": 40.369998931884766,
+                "close": 40.959999084472656,
+                "volume": 5940400,
+                "adjclose": 39.764469146728516
+            },
+            {
+                "date": 1510549200,
+                "open": 39.709999084472656,
+                "high": 41.220001220703125,
+                "low": 38.41999816894531,
+                "close": 40.86000061035156,
+                "volume": 11379400,
+                "adjclose": 39.66738510131836
+            },
+            {
+                "date": 1509944400,
+                "open": 38.5,
+                "high": 40.79999923706055,
+                "low": 37.790000915527344,
+                "close": 40.029998779296875,
+                "volume": 20906900,
+                "adjclose": 38.86160659790039
+            },
+            {
+                "date": 1509336000,
+                "open": 40.75,
+                "high": 40.880001068115234,
+                "low": 38.43000030517578,
+                "close": 38.5,
+                "volume": 10573600,
+                "adjclose": 37.37626266479492
+            },
+            {
+                "date": 1508731200,
+                "open": 42.150001525878906,
+                "high": 42.689998626708984,
+                "low": 40.619998931884766,
+                "close": 40.970001220703125,
+                "volume": 10146600,
+                "adjclose": 39.774169921875
+            },
+            {
+                "date": 1508126400,
+                "open": 40.540000915527344,
+                "high": 42.5,
+                "low": 39.630001068115234,
+                "close": 42.150001525878906,
+                "volume": 21468100,
+                "adjclose": 40.91973114013672
+            },
+            {
+                "date": 1507521600,
+                "open": 44.439998626708984,
+                "high": 44.66999816894531,
+                "low": 42.119998931884766,
+                "close": 42.650001525878906,
+                "volume": 9210400,
+                "adjclose": 41.40513610839844
+            },
+            {
+                "date": 1506916800,
+                "open": 45.040000915527344,
+                "high": 45.040000915527344,
+                "low": 43.29999923706055,
+                "close": 44.310001373291016,
+                "volume": 18757000,
+                "adjclose": 43.016685485839844
+            },
+            {
+                "date": 1506312000,
+                "open": 46.68000030517578,
+                "high": 47.810001373291016,
+                "low": 46.56999969482422,
+                "close": 47.150001525878906,
+                "volume": 7609300,
+                "adjclose": 45.7737922668457
+            }
+        ],
+        "isPending": false,
+        "firstTradeDate": 322131600,
+        "id": "1wk15063840001537920000",
+        "timeZone": {
+            "gmtOffset": -14400
+        },
+        "eventsData": [
+            {
+                "amount": 0.37,
+                "date": 1535722200,
+                "type": "DIVIDEND",
+                "data": 0.37
+            },
+            {
+                "amount": 0.37,
+                "date": 1526563800,
+                "type": "DIVIDEND",
+                "data": 0.37
+            },
+            {
+                "amount": 0.37,
+                "date": 1520001000,
+                "type": "DIVIDEND",
+                "data": 0.37
+            },
+            {
+                "amount": 0.37,
+                "date": 1511533800,
+                "type": "DIVIDEND",
+                "data": 0.37
+            }
+        ]
+    }
+}
