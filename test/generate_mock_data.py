@@ -61,7 +61,7 @@ def run_function(base_scraper, data_generator, function, *func_args, **func_kwar
 	##pop unesessary data out of the cache copy
 	important_data = cached.copy()
 	for key in cached.keys():
-		if key not in ['HistoricalPriceStore','QuoteSummaryStore' 
+		if key not in ['HistoricalPriceStore','QuoteSummaryStore',
 		'RecommendationStore', 'StreamDataStore', 'OptionContractsStore']:
 			important_data.pop(key)
 	return important_data
