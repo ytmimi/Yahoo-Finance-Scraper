@@ -7,6 +7,7 @@
   * [Objects](#objects)
     * [Option](#option)
     * [OptionChain](#optionchain)
+    * [StockOverview](#stockoverview)
     * [StockPrice](#stockprice)
     * [Ticker](#ticker)
   * [Scalars](#scalars)
@@ -441,6 +442,129 @@ A list of all call and put options for the given expiration date.
 </tbody>
 </table>
 
+### StockOverview
+
+<table>
+<thead>
+<tr>
+<th align="left">Field</th>
+<th align="right">Argument</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2" valign="top"><strong>symbol</strong></td>
+<td valign="top"><a href="#string">String</a></td>
+<td>
+
+A valid stock ticker.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>openToday</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+Todays price when the stock opened.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>highToday</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+The highest price the stock reached today.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>lowToday</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+The lowest price the stock reached today.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>closePrevious</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+The last trading days closing price.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>recentPrice</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+The most recent stock price available.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>volumeToday</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+The number of shares traded today.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>sharesOtstanding</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+The total number of shares availabe.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>marketCap</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+The value of a companies equity.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>fiftyTwoWeekHigh</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+The stockes highest price over the last year.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>fiftyTwoWeekLow</strong></td>
+<td valign="top"><a href="#float">Float</a></td>
+<td>
+
+The stocks lowest price over the last year.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>fiftyTwoWeekRange</strong></td>
+<td valign="top"><a href="#string">String</a></td>
+<td>
+
+The low-high range over the last year.
+
+</td>
+</tr>
+</tbody>
+</table>
+
 ### StockPrice
 
 <table>
@@ -573,6 +697,24 @@ Determins the frequency of stock price data. 1d for daily, 1wk for weekly, and 1
 <td>
 
 A list of stock price data.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>stockOverview</strong></td>
+<td valign="top"><a href="#stockoverview">StockOverview</a></td>
+<td>
+
+Basic information on the stock price performace on the day and over the year
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><strong>relatedStocks</strong></td>
+<td valign="top">[<a href="#stockoverview">StockOverview</a>]</td>
+<td>
+
+Current and yearly performance information on a list of related stock tickers
 
 </td>
 </tr>

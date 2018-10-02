@@ -49,6 +49,20 @@ class Option_Description(Description):
 	contractSize = 'The units of underlying that is represented by one contract. Typically one option contract covers 100 shares of stock.'
 	optionType = 'Indecates whether the option is a call or a put.'
 
+class StockOverview(Description):
+	symbol = TICKER
+	openToday = 'Todays price when the stock opened.'
+	highToday = 'The highest price the stock reached today.'
+	lowToday = 'The lowest price the stock reached today.'
+	closePrevious = 'The last trading days closing price.'
+	recentPrice = 'The most recent stock price available.'
+	volumeToday = 'The number of shares traded today.'
+	sharesOtstanding = 'The total number of shares availabe.'
+	marketCap = 'The value of a companies equity.'
+	fiftyTwoWeekHigh = 'The stockes highest price over the last year.'
+	fiftyTwoWeekLow = 'The stocks lowest price over the last year.'
+	fiftyTwoWeekRange = 'The low-high range over the last year.'
+
 
 class Option_Chain_Description(Description):
 	underlying = UNDERLYING
@@ -59,14 +73,14 @@ class Option_Chain_Description(Description):
 	allOptions = 'A list of all call and put options for the given expiration date.'
 
 
-
-
 class Ticker_Description(Description):
 	ticker = TICKER
 	startDate = 'The first date requested for stock data.'
 	endDate = 'The last date requested for stock data.'
 	frequency = 'Determins the frequency of stock price data. 1d for daily, 1wk for weekly, and 1mo for monthly '
 	stockPrices = 'A list of stock price data.'
+	stockOverview = 'Basic information on the stock price performace on the day and over the year' 
+	relatedStocks ='Current and yearly performance information on a list of related stock tickers' 
 	calls = 'A list of near term call options for the given stock'
 	puts = 'A list of near term put options for the given stock.'
 	optionChains = 'A list of all option contracts that expire on the same day.'

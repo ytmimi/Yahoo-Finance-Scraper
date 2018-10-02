@@ -17,6 +17,7 @@ from schema_description import (
 	Option_Chain_Description as opc_desc,
 	Ticker_Description as tik_desc,
 	Query_Description as q_desc,
+	StockOverview as so_desc,
 )
 
 import graphene
@@ -152,6 +153,57 @@ class Option(graphene.ObjectType):
 		)
 
 
+class StockOverview(graphene.ObjectType):
+	symbol = graphene.String(
+		description = so_desc.desc('symbol'),
+		)
+	openToday = graphene.Float(
+		description = so_desc.desc('openToday'),
+		resolver = lambda root, info: raw_round_resolver(root, 'openToday')
+		)
+	highToday = graphene.Float(
+		description = so_desc.desc('highToday'),
+		resolver = lambda root, info: raw_round_resolver(root, 'highToday')
+		)
+	lowToday = graphene.Float(
+		description = so_desc.desc('lowToday'),
+		resolver = lambda root, info: raw_round_resolver(root, 'lowToday')
+		)
+	closePrevious = graphene.Float(
+		description = so_desc.desc('closePrevious'),
+		resolver = lambda root, info: raw_round_resolver(root, 'closePrevious')
+		)
+	recentPrice = graphene.Float(
+		description = so_desc.desc('recentPrice'),
+		resolver = lambda root, info: raw_round_resolver(root, 'recentPrice')
+		)
+	volumeToday = graphene.Float(
+		description = so_desc.desc('volumeToday'),
+		resolver = lambda root, info: raw_round_resolver(root, 'volumeToday')
+		)
+	sharesOtstanding = graphene.Float(
+		description = so_desc.desc('sharesOtstanding'),
+		resolver = lambda root, info: raw_round_resolver(root, 'sharesOtstanding')
+		)
+	marketCap = graphene.Float(
+		description = so_desc.desc('marketCap'),
+		resolver = lambda root, info: raw_round_resolver(root, 'marketCap')
+		)
+	fiftyTwoWeekHigh = graphene.Float(
+		description = so_desc.desc('fiftyTwoWeekHigh'),
+		resolver = lambda root, info: raw_round_resolver(root, 'fiftyTwoWeekHigh')
+		)
+	fiftyTwoWeekLow = graphene.Float(
+		description = so_desc.desc('fiftyTwoWeekLow'),
+		resolver = lambda root, info: raw_round_resolver(root, 'fiftyTwoWeekLow')
+		)
+	fiftyTwoWeekRange = graphene.String(
+		description = so_desc.desc('fiftyTwoWeekRange'),
+		resolver = lambda root, info: raw_resolver(root, 'fiftyTwoWeekRange')
+		)
+
+
+
 def map_options(option_data):
 	'''maps given option_data into an Option object'''
 	return list( map( lambda data: Option(**data), option_data))
@@ -236,6 +288,12 @@ class Ticker(graphene.ObjectType):
 	stockPrices = graphene.List(
 		StockPrice, description=tik_desc.desc('stockPrices')
 		)
+	stockOverview = graphene.Field(
+		StockOverview, description = tik_desc.desc('stockOverview')
+		)
+	relatedStocks = graphene.List(
+		StockOverview, description = tik_desc.desc('relatedStocks'), 
+		)
 	calls = graphene.List(
 		Option, description=tik_desc.desc('calls')
 		)
@@ -255,6 +313,14 @@ class Ticker(graphene.ObjectType):
 		'end_date':self.endDate, 'frequency':self.frequency,
 		})
 		return map_stockPrice(stock_data)
+
+	def resolve_stockOverview(self, info):
+		stock_data = stock.overview(self.ticker)[0]
+		return StockOverview(**stock_data)
+
+	def resolve_relatedStocks(self, info):
+		stock_data = stock.relate_tickers(self.ticker)
+		return [StockOverview(**data) for data in stock_data]
 
 	def resolve_calls(self, info):
 		call_data = option.calls(self.ticker)
