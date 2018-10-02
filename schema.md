@@ -531,7 +531,7 @@ The total number of shares availabe.
 <td valign="top"><a href="#float">Float</a></td>
 <td>
 
-The value of a companies equity.
+The total value of a companies equity.
 
 </td>
 </tr>
@@ -540,7 +540,7 @@ The value of a companies equity.
 <td valign="top"><a href="#float">Float</a></td>
 <td>
 
-The stockes highest price over the last year.
+The stocks highest price over the last year.
 
 </td>
 </tr>

@@ -58,8 +58,8 @@ class StockOverview(Description):
 	recentPrice = 'The most recent stock price available.'
 	volumeToday = 'The number of shares traded today.'
 	sharesOutstanding = 'The total number of shares availabe.'
-	marketCap = 'The value of a companies equity.'
-	fiftyTwoWeekHigh = 'The stockes highest price over the last year.'
+	marketCap = 'The total value of a companies equity.'
+	fiftyTwoWeekHigh = 'The stocks highest price over the last year.'
 	fiftyTwoWeekLow = 'The stocks lowest price over the last year.'
 	fiftyTwoWeekRange = 'The low-high range over the last year.'
 
