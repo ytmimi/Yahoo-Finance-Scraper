@@ -43,7 +43,7 @@ STOCK_DATA_FIELDS = ['date', 'open', 'high', 'low', 'close',
 	'volume', 'adjclose']
 
 RELATED_STOCK_FIELDS = ['symbol', 'openToday','highToday','lowToday',
-	'closePrevious', 'recentPrice', 'volumeToday','sharesOtstanding',
+	'closePrevious', 'recentPrice', 'volumeToday','sharesOutstanding',
 	'marketCap','fiftyTwoWeekHigh', 'fiftyTwoWeekLow','fiftyTwoWeekRange',]
 
 OPTION_DATA_FIELDS = ['contractSymbol','impliedVolatility','expiration',

@@ -67,7 +67,7 @@ class Stock_Data(CacheData):
 				'closePrevious':data_dict['regularMarketPreviousClose'],
 				'recentPrice':data_dict['regularMarketPrice'],
 				'volumeToday':data_dict['regularMarketVolume'],
-				'sharesOtstanding':data_dict['sharesOutstanding'],
+				'sharesOutstanding':data_dict['sharesOutstanding'],
 				'marketCap':data_dict['marketCap'],
 				'fiftyTwoWeekHigh':data_dict['fiftyTwoWeekHigh'],
 				'fiftyTwoWeekLow':data_dict['fiftyTwoWeekLow'],
