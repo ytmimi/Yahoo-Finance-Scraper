@@ -50,14 +50,14 @@ class Option_Description(Description):
 	optionType = 'Indecates whether the option is a call or a put.'
 
 class StockOverview(Description):
-	symbol = TICKER
+	symbol = 'The ticker for the stock.'
 	openToday = 'Todays price when the stock opened.'
 	highToday = 'The highest price the stock reached today.'
 	lowToday = 'The lowest price the stock reached today.'
 	closePrevious = 'The last trading days closing price.'
 	recentPrice = 'The most recent stock price available.'
 	volumeToday = 'The number of shares traded today.'
-	sharesOtstanding = 'The total number of shares availabe.'
+	sharesOutstanding = 'The total number of shares availabe.'
 	marketCap = 'The value of a companies equity.'
 	fiftyTwoWeekHigh = 'The stockes highest price over the last year.'
 	fiftyTwoWeekLow = 'The stocks lowest price over the last year.'

@@ -459,7 +459,7 @@ A list of all call and put options for the given expiration date.
 <td valign="top"><a href="#string">String</a></td>
 <td>
 
-A valid stock ticker.
+The ticker for the stock.
 
 </td>
 </tr>
@@ -518,7 +518,7 @@ The number of shares traded today.
 </td>
 </tr>
 <tr>
-<td colspan="2" valign="top"><strong>sharesOtstanding</strong></td>
+<td colspan="2" valign="top"><strong>sharesOutstanding</strong></td>
 <td valign="top"><a href="#float">Float</a></td>
 <td>
 

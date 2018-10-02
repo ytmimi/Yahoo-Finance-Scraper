@@ -181,9 +181,9 @@ class StockOverview(graphene.ObjectType):
 		description = so_desc.desc('volumeToday'),
 		resolver = lambda root, info: raw_round_resolver(root, 'volumeToday')
 		)
-	sharesOtstanding = graphene.Float(
-		description = so_desc.desc('sharesOtstanding'),
-		resolver = lambda root, info: raw_round_resolver(root, 'sharesOtstanding')
+	sharesOutstanding = graphene.Float(
+		description = so_desc.desc('sharesOutstanding'),
+		resolver = lambda root, info: raw_round_resolver(root, 'sharesOutstanding')
 		)
 	marketCap = graphene.Float(
 		description = so_desc.desc('marketCap'),
